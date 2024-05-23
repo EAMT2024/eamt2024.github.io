@@ -17,13 +17,28 @@ title: "Accepted Papers"
       <div class="accordion-body">
         {% for format, papers in papersByType %}
         {% if papers.length > 0 %}
-        <p class="fw-bold">{{ format | title }} </p>
+        <h2 class="h3 {% if loop.index0 != 0 %} mt-4 {%endif%}">{{ format | title }}</h2>
 
-          <ul>
-            {% for paper in papers %}
-            <li>{{ paper.title }}<br><i>{{ paper.authors }}</i></li>
-            {% endfor %}
-          </ul>
+        <div>
+          {% for paper in papers %}
+          <div class="mb-3">
+            <div class="fw-bold">
+              {{ paper.title }}
+            </div>
+            <div><i>{{ paper.authors }}</i></div>
+            <div><a class="link-secondary" data-bs-toggle="collapse"
+                href="#abstract-{{ paper.track}}-{{ paper.number }}" role="button" aria-expanded="false"
+                aria-controls="abstract-{{ paper.number }}">
+                <i class="fa-solid fa-plus me-1"></i>abstract
+              </a></div>
+            <p id="abstract-{{ paper.track }}-{{ paper.number }}"
+              class="collapse toggling-collapse border-start border-3 ps-3 mt-1">
+              {{ paper.abstract | e | markdown | safe }}
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+
         {% endif %}
         {% endfor %}
       </div>
