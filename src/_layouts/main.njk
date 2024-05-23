@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="/assets/custom.css">
   </head>
   <body>
-    <div>
+    <header class="gsites_header">
       <div class="header_img_contain">
         <div class="header_img">
         </div>
         <h1 class="page_title">{{ title }}</h1>
       </div>
-    </div>
+    </header>
     {# {% include "nav.njk" %} #}
-    <main class="container py-3">
+    <main class="container pb-3">
       {{ content | safe }}
     </main>
 
