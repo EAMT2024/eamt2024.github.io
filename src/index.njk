@@ -7,28 +7,30 @@ layout: main.njk
 <p>The complete programme will follow shortly.</p>
 
 <div class="accordion">
-    {% for track, papersByType in groupedPapers %}
-    <div class="accordion-item">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{track}}" aria-controls="collapse-{{track}}">
-                {{ tracks[track] }}
-            </button>
-        </h2>
-        
-        <div id="collapse-{{track}}" class="accordion-collapse collapse" aria-labelledby="heading-{{track}}">
-            <div class="accordion-body">
-                {% for format, papers in papersByType %}
-                    <h4>{{ format | title }} </h3>
+  {% for track, papersByType in groupedPapers %}
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapse-{{track}}" aria-controls="collapse-{{track}}">
+        {{ tracks[track] }}
+      </button>
+    </h2>
 
-                    <ul>
-                    {% for paper in papers %}
-                        <li><strong>{{ paper.title }}</strong><br>{{ paper.authors }}</li>
-                    {% endfor %}
-                    </ul>
-                {% endfor %}
-            </div>
-        </div>
+    <div id="collapse-{{track}}" class="accordion-collapse collapse" aria-labelledby="heading-{{track}}">
+      <div class="accordion-body">
+        {% for format, papers in papersByType %}
+        {% if papers.length > 0 %}
+        <p class="fw-bold">{{ format | title }} </p>
+
+          <ul>
+            {% for paper in papers %}
+            <li>{{ paper.title }}<br><i>{{ paper.authors }}</i></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
-
