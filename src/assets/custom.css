@@ -30,7 +30,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  word-wrap: break-word;
+  padding-left: 3.75%;
+  padding-right: 3.75%;
 }
 
 .header_img::before {
@@ -48,13 +50,15 @@
 .header_img {
   background: url("/assets/sheff.jpg") no-repeat center center;
   background-size: cover;
-  background-position: 50% calc(50% - var(--eamt-nav-offset));
+  /* background-size: 100% calc(100% + var(--eamt-nav-height)); */
+  /* background-position: 50% calc(50% + var(--eamt-nav-offset)); */
   width: 100%;
   height: calc(var(--eamt-header-size) - var(--eamt-nav-height));
 }
 
 .page_title {
   font-weight: 900;
+  font-size: 31.0pt;
 }
 
 /* @media only screen and (min-width: 1280px) {
