@@ -1,0 +1,17 @@
+---
+permalink: /events.json
+eleventyImport:
+  collections: ["calendarMerged", "calendar", "calendarDefaults"]
+---
+[
+{% for event in calendarMerged %}
+  {
+    "title": "{{ event.title | safe }}",
+    "start": "{{ event.date | jsonDate }}T{{ event.start_time}}:00",
+    "end": "{{ event.date | jsonDate }}T{{ event.end_time}}:00",
+    "color": "{{ event.color }}",
+    "textColor": "{{ event.textColor }}",
+    "extendedProps": {{ event | dump | safe }}
+  }{% if not loop.last %},{% endif %}
+{% endfor %}
+]

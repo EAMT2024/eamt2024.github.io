@@ -1,0 +1,90 @@
+---
+layout: main.njk
+title: "Schedule"
+scripts:
+  - https://cdn.jsdelivr.net/npm/moment@2.27.0/min/moment.min.js
+  - https://cdn.jsdelivr.net/npm/fullcalendar@6.1.13/index.global.min.js
+  - https://cdn.jsdelivr.net/npm/@fullcalendar/moment@6.1.13/index.global.min.js
+  - https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.13/index.global.min.js
+  - /assets/schedule.js
+fluid: true
+---
+
+<div id='calendar'></div>
+
+
+{% for session, papers in groupedPapers.bySession %}
+  {% set sessionData = sessions[papers[0].session_path[0]][papers[0].session_path[1]] %}
+  {% set track = tracks[sessionData.track] %}
+  <div class="modal modal-lg fade" tabindex="-1" id="session-modal-{{session}}" aria-hidden="true" aria-labelledby="session-modal-label-{{session}}">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header d-block">
+          <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h4 class="modal-title" id="session-modal-label-{{session}}">{{ sessionData.title }} - {{ track }}</h4>
+
+          <div class="d-flex column-gap-3">
+            {% for event in sessionSchedule[session] %}
+            {% set session_type = sessions[event.session.type][event.session.idx] %}
+            <div>
+              <div class="fw-bold mb-1">
+                {% if event.session.type == "poster" and event.session.is_boaster %}
+                Poster Boaster
+                <i class="fa-solid fa-bullhorn me-1 fa-fw"></i>
+                {% elif sessionSchedule[session].length > 1 %}
+                {{ event.session.type | capitalize }} Session
+                {% endif %}
+              </div>
+              <div>
+                {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
+                {{ event.date | shortDate }} {{ event.start_time }} - {{ event.end_time }}
+              </div>
+              {% if event.room %}
+              <div>
+                <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
+                {{ event.room }}
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="modal-body px-0">
+          <ul class="list-group list-group-flush" id="session-list-{{session}}">
+            {% from "paper.njk" import showPaper %}
+            {% for paper in papers %}
+              <li class="list-group-item">
+                {{ showPaper(paper) }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% for session, papers in groupedPapers.bySession %}
+<template id="list-view-sess-{{ session }}">
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button class="accordion-button collapsed calendar-sess-title" type="button" data-bs-toggle="collapse" data-bs-target="#cal-sess-{{session}}-collapse" aria-expanded="false" aria-controls="cal-sess-{{session}}-collapse">
+        </button>
+      </div>
+      <div class="accordion-collapse collapse" id="cal-sess-{{session}}-collapse">
+        <ul class="list-group list-group-flush">
+          {% from "paper.njk" import showPaper %}
+          {% for paper in papers %}
+            <li class="list-group-item">
+              {{ showPaper(paper) }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</template>
+{% endfor %}

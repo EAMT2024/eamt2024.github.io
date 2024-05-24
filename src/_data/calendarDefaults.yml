@@ -1,0 +1,45 @@
+default:
+  color: "#318ce7"
+  textColor: "#ffffff"
+  prefixType: false
+type:
+  social:
+    color: "#c4b5fd"
+    textColor: "#000000"
+  registration:
+    color: "#feccd8"
+    textColor: "#000000"
+  announcements:
+    color: "#feccd8"
+    textColor: "#000000"
+  break:
+    color: "#f4f4f5"
+    textColor: "#000000"
+  session:
+    oral:
+      color: "#d1ebfd"
+      textColor: "#000000"
+    poster:
+      color: "#daf5d3"
+      textColor: "#000000"
+  keynote:
+    color: "#d946ef"
+    textColor: "#ffffff"
+    prefixType: true
+  plenary:
+    color: "#8b5cf6"
+    textColor: "#ffffff"
+  tutorial:
+    color: "#14b8a6"
+    prefixType: true
+  workshop:
+    prefixType: true
+title:
+  "CTT 2024":
+    link: "https://ctt2024.ccl.kuleuven.be/programme"
+  "GITT 2024":
+    link: "https://sites.google.com/tilburguniversity.edu/gitt2024/programme"
+  "KEMT 2024":
+    link: "https://kemt2024.wixsite.com/home#comp-jnkeix36"
+  "Linguistically Motivated Neural Machine Translation":
+    link: "https://eamt2024.sheffield.ac.uk/programme/tutorial#h.lf9bcxnbtncv"

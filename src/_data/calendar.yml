@@ -1,0 +1,469 @@
+# DAY 0
+- type: social
+  date: 2024-06-23
+  title: "ZOO Digital event: National Videogame Museum"
+  start_time: "17:30"
+  end_time: "20:30"
+  description: >
+    Join us at the National Videogame Museum for a warm welcome to Sheffield.
+    Play over 100 videogames and learn about their history and cultural importance.
+
+# DAY 1
+- type: registration
+  date: 2024-06-24
+  title: "Registration"
+  start_time: "08:00"
+  end_time: "09:00"
+- type: plenary
+  date: 2024-06-24
+  title: Conference Opening
+  start_time: "09:00"
+  end_time: "09:30"
+- type: session
+  date: 2024-06-24
+  start_time: "09:30"
+  end_time: "10:00"
+  session:
+    type: oral
+    idx: 1a
+- type: session
+  date: 2024-06-24
+  start_time: "10:00"
+  end_time: "10:30"
+  session:
+    type: oral
+    idx: 1b
+- type: break
+  title: Coffee Break
+  date: 2024-06-24
+  start_time: "10:30"
+  end_time: "11:00"
+- type: keynote
+  date: 2024-06-24
+  title: "Harnessing the benefits of machine translation at the European Parliament: from current practices to future possibilities"
+  byline: "Valter Mavrič"
+  start_time: "11:00"
+  end_time: "12:00"
+  link: https://eamt2024.sheffield.ac.uk/programme/keynote-speakers#h.qjn0rzu6ewqs
+- type: session
+  date: 2024-06-24
+  start_time: "12:00"
+  end_time: "13:00"
+  session:
+    type: poster
+    idx: 1a
+    is_boaster: true
+- type: session
+  date: 2024-06-24
+  start_time: "12:00"
+  end_time: "13:00"
+  session:
+    type: poster
+    idx: 1b
+    is_boaster: true
+- type: session
+  date: 2024-06-24
+  start_time: "12:00"
+  end_time: "13:00"
+  session:
+    type: poster
+    idx: 1c
+    is_boaster: true
+- type: break
+  title: Lunch Break
+  date: 2024-06-24
+  start_time: "13:00"
+  end_time: "14:00"
+- type: session
+  date: 2024-06-24
+  start_time: "14:00"
+  end_time: "15:00"
+  session:
+    type: poster
+    idx: 1a
+- type: session
+  date: 2024-06-24
+  start_time: "14:00"
+  end_time: "15:00"
+  session:
+    type: poster
+    idx: 1b
+- type: session
+  date: 2024-06-24
+  start_time: "14:00"
+  end_time: "15:00"
+  session:
+    type: poster
+    idx: 1c
+- type: session
+  date: 2024-06-24
+  start_time: "15:00"
+  end_time: "15:30"
+  session:
+    type: oral
+    idx: 2a
+- type: session
+  date: 2024-06-24
+  start_time: "15:30"
+  end_time: "16:00"
+  session:
+    type: oral
+    idx: 2b
+- type: break
+  title: Coffee Break
+  date: 2024-06-24
+  start_time: "16:00"
+  end_time: "16:30"
+- type: session
+  date: 2024-06-24
+  start_time: "16:30"
+  end_time: "17:00"
+  session: 
+    type: oral
+    idx: 3a
+- type: session
+  date: 2024-06-24
+  start_time: "17:00"
+  end_time: "17:30"
+  session: 
+    type: oral
+    idx: 3b
+- type: social
+  date: 2024-06-24
+  title: Welcome Reception
+  start_time: "18:00"
+  end_time: "21:00"
+  description: TBC
+
+# DAY 2
+- type: registration
+  date: 2024-06-25
+  title: "Registration"
+  start_time: "08:00"
+  end_time: "09:00"
+- type: announcements
+  date: 2024-06-25
+  title: "Conference Announcements"
+  start_time: "09:00"
+  end_time: "09:15"
+- type: session
+  date: 2024-06-25
+  start_time: "09:15"
+  end_time: "09:45"
+  session:
+    type: oral
+    idx: 4a
+- type: session
+  date: 2024-06-25
+  start_time: "09:45"
+  end_time: "10:15"
+  session:
+    type: oral
+    idx: 4b
+- type: break
+  title: Coffee Break
+  date: 2024-06-25
+  start_time: "10:15"
+  end_time: "10:45"
+- type: session
+  date: 2024-06-25
+  start_time: "10:45"
+  end_time: "11:15"
+  session:
+    type: oral
+    idx: 5a
+- type: session
+  date: 2024-06-25
+  start_time: "11:15"
+  end_time: "11:45"
+  session:
+    type: oral
+    idx: 5b
+- type: session
+  date: 2024-06-25
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 2a
+    is_boaster: true
+- type: session
+  date: 2024-06-25
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 2b
+    is_boaster: true
+- type: session
+  date: 2024-06-25
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 2c
+    is_boaster: true
+- type: break
+  title: Lunch Break
+  date: 2024-06-25
+  start_time: "12:45"
+  end_time: "13:45"
+- type: session
+  date: 2024-06-25
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 2a
+- type: session
+  date: 2024-06-25
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 2b
+- type: session
+  date: 2024-06-25
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 2c
+- type: plenary
+  date: 2024-06-25
+  title: "Best Thesis Award"
+  start_time: "14:45"
+  end_time: "15:15"
+- type: plenary
+  date: 2024-06-25
+  title: "Panel Discussion (TBC)"
+  start_time: "15:15"
+  end_time: "15:45"
+- type: break
+  title: Coffee Break
+  date: 2024-06-25
+  start_time: "15:45"
+  end_time: "16:15"
+- type: plenary
+  date: 2024-06-25
+  title: "EAMT GA"
+  start_time: "16:15"
+  end_time: "17:15"
+- type: social
+  date: 2024-06-25
+  title: "Conference Dinner"
+  start_time: "18:30"
+  end_time: "23:30"
+  description: TBC
+
+# DAY 3
+- type: registration
+  date: 2024-06-26
+  title: "Registration"
+  start_time: "08:00"
+  end_time: "09:00"
+- type: announcements
+  date: 2024-06-26
+  title: "Conference Announcements"
+  start_time: "09:00"
+  end_time: "09:15"
+- type: keynote
+  date: 2024-06-26
+  title: "Translation and LLMs"
+  byline: "Alexandra Birch"
+  start_time: "09:15"
+  end_time: "10:15"
+  link: https://eamt2024.sheffield.ac.uk/programme/keynote-speakers#h.fv0s4sfkb6fu
+- type: break
+  title: Coffee Break
+  date: 2024-06-26
+  start_time: "10:15"
+  end_time: "10:45"
+- type: session
+  date: 2024-06-26
+  start_time: "10:45"
+  end_time: "11:15"
+  session:
+    type: oral
+    idx: 6a
+- type: session
+  date: 2024-06-26
+  start_time: "11:15"
+  end_time: "11:45"
+  session:
+    type: oral
+    idx: 6b
+- type: session
+  date: 2024-06-26
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 3a
+    is_boaster: true
+- type: session
+  date: 2024-06-26
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 3b
+    is_boaster: true
+- type: session
+  date: 2024-06-26
+  start_time: "11:45"
+  end_time: "12:45"
+  session:
+    type: poster
+    idx: 3c
+    is_boaster: true
+- type: break
+  title: Lunch Break
+  date: 2024-06-26
+  start_time: "12:45"
+  end_time: "13:45"
+- type: session
+  date: 2024-06-26
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 3a
+- type: session
+  date: 2024-06-26
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 3b
+- type: session
+  date: 2024-06-26
+  start_time: "13:45"
+  end_time: "14:45"
+  session:
+    type: poster
+    idx: 3c
+- type: session
+  date: 2024-06-26
+  start_time: "14:45"
+  end_time: "15:15"
+  session:
+    type: oral
+    idx: 7a
+- type: session
+  date: 2024-06-26
+  start_time: "15:15"
+  end_time: "15:45"
+  session:
+    type: oral
+    idx: 7b
+- type: break
+  title: Coffee Break
+  date: 2024-06-26
+  start_time: "15:45"
+  end_time: "16:15"
+- type: plenary
+  date: 2024-06-26
+  title: "Closing Session"
+  start_time: "16:15"
+  end_time: "16:45"
+- type: social
+  date: 2024-06-26
+  title: "Food Tour"
+  start_time: "18:00"
+  end_time: "21:00"
+  description: TBC
+
+# DAY 4
+- type: registration
+  date: 2024-06-27
+  title: "Registration"
+  start_time: "08:00"
+  end_time: "09:00"
+- type: tutorial
+  date: 2024-06-27
+  title: "Linguistically Motivated Neural Machine Translation"
+  start_time: "09:00"
+  end_time: "10:30"
+  description: TBC
+- type: workshop
+  date: 2024-06-27
+  title: "CTT 2024"
+  start_time: "09:00"
+  end_time: "10:30"
+- type: workshop
+  date: 2024-06-27
+  title: "GITT 2024"
+  start_time: "09:00"
+  end_time: "10:30"
+- type: workshop
+  date: 2024-06-27
+  title: "KEMT 2024"
+  start_time: "09:00"
+  end_time: "10:30"
+- type: break
+  title: Coffee Break
+  date: 2024-06-27
+  start_time: "10:30"
+  end_time: "11:00"
+- type: tutorial
+  date: 2024-06-27
+  title: "Linguistically Motivated Neural Machine Translation"
+  start_time: "11:00"
+  end_time: "12:30"
+  description: TBC
+- type: workshop
+  date: 2024-06-27
+  title: "CTT 2024"
+  start_time: "11:00"
+  end_time: "12:30"
+- type: workshop
+  date: 2024-06-27
+  title: "GITT 2024"
+  start_time: "11:00"
+  end_time: "12:30"
+- type: workshop
+  date: 2024-06-27
+  title: "KEMT 2024"
+  start_time: "11:00"
+  end_time: "12:30"
+- type: break
+  title: Lunch Break
+  date: 2024-06-27
+  start_time: "12:30"
+  end_time: "13:30"
+- type: workshop
+  date: 2024-06-27
+  title: "CTT 2024"
+  start_time: "13:30"
+  end_time: "15:00"
+- type: workshop
+  date: 2024-06-27
+  title: "GITT 2024"
+  start_time: "13:30"
+  end_time: "15:00"
+- type: workshop
+  date: 2024-06-27
+  title: "KEMT 2024"
+  start_time: "13:30"
+  end_time: "15:00"
+- type: break
+  title: Coffee Break
+  date: 2024-06-27
+  start_time: "15:00"
+  end_time: "15:30"
+- type: workshop
+  date: 2024-06-27
+  title: "CTT 2024"
+  start_time: "15:30"
+  end_time: "17:00"
+- type: workshop
+  date: 2024-06-27
+  title: "GITT 2024"
+  start_time: "15:30"
+  end_time: "17:00"
+- type: workshop
+  date: 2024-06-27
+  title: "KEMT 2024"
+  start_time: "15:30"
+  end_time: "17:00"

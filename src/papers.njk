@@ -3,46 +3,70 @@ layout: main.njk
 title: "Accepted Papers"
 ---
 
+<div class="text-end">
+  <button class="btn btn-sm btn-link collapse-all" data-target=".track-collapse" data-action="show">
+    <i class="fa fa-plus me-1"></i><span>Show All Tracks</span>
+  </button>
+  <button class="btn btn-sm btn-link collapse-all" data-target=".abstract-collapse" data-action="show">
+    <i class="fa fa-plus me-1"></i><span>Show All Abstracts</span>
+  </button>
+</div>
+
 <div class="accordion">
-  {% for track, papersByType in groupedPapers %}
+  {% for track, papers in groupedPapers.byTrack %}
   <div class="accordion-item">
-    <h2 class="accordion-header">
+    <h2 class="accordion-header sticky-top">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapse-{{track}}" aria-controls="collapse-{{track}}">
         {{ tracks[track] }}
       </button>
     </h2>
 
-    <div id="collapse-{{track}}" class="accordion-collapse collapse" aria-labelledby="heading-{{track}}">
-      <div class="accordion-body">
-        {% for format, papers in papersByType %}
-        {% if papers.length > 0 %}
-        <h2 class="h3 {% if loop.index0 != 0 %} mt-4 {%endif%}">{{ format | title }}</h2>
+    <div id="collapse-{{track}}" class="accordion-collapse collapse track-collapse" aria-labelledby="heading-{{track}}">
+      <div class="accordion-body list-group list-group-flush">
+        {% from "paper.njk" import showPaper %}
 
-        <div>
-          {% for paper in papers %}
-          <div class="mb-3">
-            <div class="fw-bold">
-              {{ paper.title }}
-            </div>
-            <div><i>{{ paper.authors }}</i></div>
-            <div><a class="link-secondary" data-bs-toggle="collapse"
-                href="#abstract-{{ paper.track}}-{{ paper.number }}" role="button" aria-expanded="false"
-                aria-controls="abstract-{{ paper.number }}">
-                <i class="fa-solid fa-plus me-1"></i>abstract
-              </a></div>
-            <p id="abstract-{{ paper.track }}-{{ paper.number }}"
-              class="collapse toggling-collapse border-start border-3 ps-3 mt-1">
-              {{ paper.abstract | e | markdown | safe }}
-            </p>
-          </div>
-          {% endfor %}
+        {% for paper in papers %}
+        <div class="list-group-item">
+          {# {{ sessionSchedule[paper.session] | dump }} #}
+          {{ showPaper(paper, sessions) }}
         </div>
-
-        {% endif %}
         {% endfor %}
       </div>
     </div>
   </div>
   {% endfor %}
 </div>
+
+
+{% for sess_key, sess_events in sessionSchedule %}
+<template id="t-{{sess_key}}-title">
+  {{ sess_events[0].date | shortDate }}
+</template>
+<template id="t-{{sess_key}}-body">
+  <div class="list-group list-group-flush">
+    {% for event in sess_events %}
+    <div class="list-group-item">
+      <div class="fw-bold mb-1">
+        {% if event.session.type == "poster" and event.session.is_boaster %}
+        Poster Boaster
+        <i class="fa-solid fa-bullhorn me-1 fa-fw"></i>
+        {% elif sess_events.length > 1 %}
+        {{ event.session.type | capitalize }} Session
+        {% endif %}
+      </div>
+      <div>
+        {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
+        {{ event.start_time }} - {{ event.end_time }}
+      </div>
+      {% if event.room %}
+      <div>
+        <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
+        {{ event.room }}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</template>
+{% endfor %}

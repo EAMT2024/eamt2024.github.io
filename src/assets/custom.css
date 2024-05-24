@@ -1,5 +1,6 @@
 @import url(https://fonts.bunny.net/css?family=source-sans-pro:400,400i,500,700,700i,900);
 
+/* Themeing */
 :root {
   --bs-primary: #4e008e;
   --bs-font-sans-serif: 'Source Sans Pro', sans-serif;
@@ -12,6 +13,7 @@
   --eamt-nav-offset: 28px;
 }
 
+/* Header */
 .gsites_header {
   margin-bottom: calc(24px + 8px);
 }
@@ -50,6 +52,8 @@
 .header_img {
   background: url("/assets/sheff.jpg") no-repeat center center;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* background-size: 100% calc(100% + var(--eamt-nav-height)); */
   /* background-position: 50% calc(50% + var(--eamt-nav-offset)); */
   width: 100%;
@@ -78,4 +82,52 @@
   .page_title {
     font-size: 44.0pt;
   }
+}
+
+/* Session Listings */
+
+.session-badge-popover .popover-body {
+  --bs-popover-body-padding-y: 0;
+  --bs-popover-body-padding-x: 0;
+}
+
+.session-badge-popover .list-group-item {
+  --bs-list-group-bg: transparent;
+}
+
+.fc-list-event-title .list-group-item {
+  --bs-list-group-bg: transparent;
+}
+
+.fc-list-event-title .accordion-item {
+  --bs-accordion-border-width: 0;
+  --bs-accordion-bg: transparent;
+}
+
+.fc-list-event-title .accordion-button {
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 0;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-active-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: transparent;
+
+}
+
+.fc-list-event-title .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.fc-list-day.fc-day>th {
+  z-index: 50;
+}
+
+.fc-list-event.has-event-link,
+.fc-list-event:has(.accordion) {
+  cursor: pointer;
+}
+
+.fc-timegrid .has-event-link,
+.fc-timegrid .has-event-modal {
+  cursor: pointer;
 }

@@ -1,0 +1,77 @@
+oral:
+  _THEME:
+    cls: info
+    icon: person-chalkboard
+  1a:
+    title: "Oral Session 1"
+    track: research_tech
+  1b:
+    title: "Oral Session 1"
+    track: research_tech
+  2a:
+    title: "Oral Session 2"
+    track: research_tech
+  2b:
+    title: "Oral Session 2"
+    track: research_ts_us
+  3a:
+    title: "Oral Session 3"
+    track: research_ts_us
+  3b:
+    title: "Oral Session 3"
+    track: research_ts_us
+  4a:
+    title: "Oral Session 4"
+    track: impl_cs
+  4b:
+    title: "Oral Session 4"
+    track: impl_cs
+  5a:
+    title: "Oral Session 5"
+    track: impl_cs
+  5b:
+    title: "Oral Session 5"
+    track: research_tech
+  6a:
+    title: "Oral Session 6"
+    track: research_ts_us
+  6b:
+    title: "Oral Session 6"
+    track: research_ts_us
+  7a:
+    title: "Oral Session 7"
+    track: research_tech
+  7b:
+    title: "Oral Session 7"
+    track: research_tech
+poster:
+  _THEME:
+    cls: success
+    icon: thumbtack
+  1a:
+    title: "Poster Session 1"
+    track: research_tech
+  1b:
+    title: "Poster Session 1"
+    track: research_ts_us
+  1c:
+    title: "Poster Session 1"
+    track: pr_pj
+  2a:
+    title: "Poster Session 2"
+    track: research_tech
+  2b:
+    title: "Poster Session 2"
+    track: impl_cs
+  2c:
+    title: "Poster Session 2"
+    track: pr_pj
+  3a:
+    title: "Poster Session 3"
+    track: research_tech
+  3b:
+    title: "Poster Session 3"
+    track: research_ts_us
+  3c:
+    title: "Poster Session 3"
+    track: pr_pj

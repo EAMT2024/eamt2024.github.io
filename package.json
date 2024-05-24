@@ -4,6 +4,9 @@
     "build": "npx @11ty/eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "clone": "^2.1.2",
+    "js-yaml": "^4.1.0",
+    "require-yml": "^2.0.0"
   }
 }

@@ -1,0 +1,48 @@
+{% macro showPaper(paper, sessions) %}
+{% if sessions %}
+{% set session_type = sessions[paper.session_path[0]] %}
+{% set session = session_type[paper.session_path[1]] %}
+{% set session_theme = session_type._THEME %}
+<div class="badge text-bg-{{ session_theme.cls }} float-end session-badge mb-2" data-sess="{{ paper.session }}">
+  <i class="fa-solid fa-{{ session_theme.icon }} me-2"></i>
+  {{ session.title }}
+</div>
+{% endif %}
+<div class="fw-bold">
+  {{ paper.title | e | markdown | safe }}
+</div>
+<div><i>{{ paper.authors }}</i></div>
+
+{# <div class="my-2">
+  {% for sess in sessionSchedule[paper.session] %}
+  {% set session_type = sessions[paper.session_path[0]] %}
+  {% set session = session_type[paper.session_path[1]] %}
+  {% if sess.session.type == "poster" and sess.session.is_boaster %}
+  <div class="badge border border-warning text-dark">
+    <i class="fa-solid fa-bullhorn me-2"></i>
+    {{ session.title | replace("Poster", "Poster Boaster") }} - {{ sess.date | shortDate }} - {{ sess.start_time
+    }}-{{ sess.end_time }}
+  </div>
+  {% elif sess.session.type == "poster" %}
+  <div class="badge border border-success text-dark">
+    <i class="fa-solid fa-thumbtack me-2"></i>
+    {{ session.title }} - {{ sess.date | shortDate }} - {{ sess.start_time }}-{{ sess.end_time }}
+  </div>
+  {% elif sess.session.type == "oral" %}
+  <div class="badge border border-primary text-dark">
+    <i class="fa-solid fa-person-chalkboard me-2"></i>
+    {{ session.title }} - {{ sess.date | shortDate }} - {{ sess.start_time }}-{{ sess.end_time }}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div> #}
+
+<div><a class="link-secondary" data-bs-toggle="collapse" href="#abstract-{{ paper.track}}-{{ paper.number }}"
+    role="button" aria-expanded="false" aria-controls="abstract-{{ paper.number }}">
+    <i class="fa-solid fa-plus me-1"></i>abstract
+  </a></div>
+<p id="abstract-{{ paper.track }}-{{ paper.number }}"
+  class="collapse toggling-collapse abstract-collapse border-start border-3 ps-3 mt-1">
+  {{ paper.abstract | e | markdown | safe }}
+</p>
+{% endmacro %}
