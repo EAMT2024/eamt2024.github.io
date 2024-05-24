@@ -18,7 +18,9 @@ calendar = new Calendar(calendarEl, {
   themeSystem: 'bootstrap5',
   nowIndicator: true,
   slotEventOverlap: false,
-  initialView: localStorage.fcView || 'timeGridWeek',
+  initialView: localStorage.fcView || 'timeListWeek',
+  contentHeight: 'auto',
+  stickyHeaderDates: true,
   initialDate: '2024-06-23',
   validRange: {
     start: '2024-06-23',
@@ -28,7 +30,7 @@ calendar = new Calendar(calendarEl, {
   slotMaxTime: '22:00:00',
   headerToolbar: {
     'start': '',
-    'center': 'timeGridWeek,timeListWeek',
+    'center': 'timeListWeek,timeGridWeek',
     'end': ''
   },
   buttonText: {
@@ -134,7 +136,6 @@ function renderTimeListEl(arg) {
   if (arg.event.extendedProps.type === "session" && !arg.event.extendedProps.session.is_boaster) {
     let sessionListId = 'list-view-sess-' + arg.event.extendedProps.session.session_code;
     let sessionListEl = document.getElementById(sessionListId);
-    console.log(sessionListEl)
     let sessionListCl = sessionListEl.content.cloneNode(true);
     sessionListCl.querySelector('.calendar-sess-title').innerHTML = arg.event.title;
     domNodes.push(sessionListCl);
