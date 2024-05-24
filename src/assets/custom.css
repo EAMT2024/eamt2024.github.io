@@ -50,14 +50,13 @@
 }
 
 .header_img {
-  background: url("/assets/sheff.jpg") no-repeat center center;
+  background: url("/assets/sheff.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   /* background-size: 100% calc(100% + var(--eamt-nav-height)); */
   /* background-position: 50% calc(50% + var(--eamt-nav-offset)); */
   width: 100%;
-  height: calc(var(--eamt-header-size) - var(--eamt-nav-height));
+  height: 100%;
 }
 
 .page_title {
