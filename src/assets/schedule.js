@@ -79,7 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
           let modal = bootstrap.Modal.getOrCreateInstance(modalEl)
           modal.show()
         }
-      } else if (info.view.type === 'timeListCustom') {
+      } else if (info.view.type === 'timeListWeek') {
+        if (info.jsEvent.target.closest('.accordion')) {
+          info.jsEvent.stopPropagation();
+          return;
+        }
         let collapseEl = info.el.querySelector('.accordion-collapse.collapse');
         if (collapseEl) {
           bootstrap.Collapse.getOrCreateInstance(collapseEl).toggle();
@@ -91,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     },
     eventContent: function(arg) {
-      if (arg.view.type === 'timeListCustom') {
+      if (arg.view.type === 'timeListWeek') {
         return renderTimeListEl(arg);
       }
 
@@ -119,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function renderTimeListEl(arg) {
   let domNodes = [];
-
   if (arg.event.extendedProps.type === "session" && !arg.event.extendedProps.session.is_boaster) {
     let sessionListId = 'list-view-sess-' + arg.event.extendedProps.session.session_code;
     let sessionListEl = document.getElementById(sessionListId);
