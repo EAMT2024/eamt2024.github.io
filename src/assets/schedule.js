@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
     slotMinTime: '08:00:00',
     slotMaxTime: '22:00:00',
     headerToolbar: {
-      'start': 'prev,next',
-      // 'center': 'title',
-      'end': 'timeGridWeek,timeGridToday,timeListWeek'
+      'start': '',
+      'center': 'timeGridWeek,timeListWeek',
+      'end': ''
     },
     buttonText: {
       'timeGridToday': 'today',
-      'timeGridWeek': 'days',
-      'timeListWeek': 'list'
+      'timeGridWeek': 'Calendar',
+      'timeListWeek': 'List'
     },
     views: {
       timeGridToday: {
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return renderTimeListEl(arg);
       }
 
-      return true;
+      return arg.event.title;
     },
     eventClassNames: function(arg) {
       if (arg.event.extendedProps.link) {
@@ -117,8 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let resetDate = () => calendar.gotoDate('2024-06-23');
 
-  document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
-  document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
+  // document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
+  // document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
 });
 
 function renderTimeListEl(arg) {
@@ -126,6 +126,7 @@ function renderTimeListEl(arg) {
   if (arg.event.extendedProps.type === "session" && !arg.event.extendedProps.session.is_boaster) {
     let sessionListId = 'list-view-sess-' + arg.event.extendedProps.session.session_code;
     let sessionListEl = document.getElementById(sessionListId);
+    console.log(sessionListEl)
     let sessionListCl = sessionListEl.content.cloneNode(true);
     sessionListCl.querySelector('.calendar-sess-title').innerHTML = arg.event.title;
     domNodes.push(sessionListCl);
