@@ -1,3 +1,5 @@
+import  renderMathInElement from 'katex/dist/contrib/auto-render';
+
 document.addEventListener("DOMContentLoaded", function() {
   renderMathInElement(document.body, {
     // customised options

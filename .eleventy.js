@@ -1,10 +1,23 @@
 const markdownIt = require("markdown-it");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+const path = require("path");
+
 
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets");
+
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    viteOptions: {},
+    resolve: {
+      alias: {
+        // Allow references to `node_modules` folder directly
+        "/node_modules": path.resolve(".", "node_modules"),
+      },
+    },
+  });
 
   const md = new markdownIt({
     html: true,

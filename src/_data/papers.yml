@@ -1269,8 +1269,8 @@
   track: pr_pj
 - Format: Poster
   abstract: "This paper presents a dataset for evaluating machine translation of emotion-loaded\
-    \ user-generated content. It contains human\x02annotated quality evaluation data\
-    \ and post\x02edited reference translations. The dataset is available at our GitHub\
+    \ user-generated content. It contains human-annotated quality evaluation data\
+    \ and post-edited reference translations. The dataset is available at our GitHub\
     \ repository."
   authors: "Shenbin Qian, Constantin Orasan, F\xE9lix do Carmo, Diptesh Kanojia"
   number: 23

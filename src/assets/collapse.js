@@ -1,3 +1,5 @@
+import { Collapse } from "bootstrap"
+
 function toggleCollapseAll(element, new_val) {
   element.dataset.action = new_val
 
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   collapseElementList.forEach((element) => {
     element.addEventListener('show.bs.collapse', function (event) {
-      let collapser = bootstrap.Collapse.getInstance(event.target)
+      let collapser = Collapse.getInstance(event.target)
       collapser._triggerArray.forEach((element) => {
         let icon = element.getElementsByTagName('i')[0]
         icon.classList.remove('fa-plus')
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
     })
     element.addEventListener('hide.bs.collapse', function (event) {
-      let collapser = bootstrap.Collapse.getInstance(event.target)
+      let collapser = Collapse.getInstance(event.target)
       collapser._triggerArray.forEach((element) => {
         let icon = element.getElementsByTagName('i')[0]
         icon.classList.remove('fa-minus')
@@ -47,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     triggerEl.addEventListener('click', function(event) {
       collapseEls.forEach((element) => {
-        let collapser = bootstrap.Collapse.getOrCreateInstance(element)
+        let collapser = Collapse.getOrCreateInstance(element)
         if (triggerEl.dataset.action == 'show') {
           collapser.show()
         } else {

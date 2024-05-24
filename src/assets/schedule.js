@@ -1,125 +1,133 @@
+import { Calendar } from '@fullcalendar/core'
+import bootstrap5Plugin from '@fullcalendar/bootstrap5'
+import momentPlugin from '@fullcalendar/moment'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import listPlugin from '@fullcalendar/list';
+import interactionPlugin from '@fullcalendar/interaction';
+import moment from 'moment';
+import { toMoment } from '@fullcalendar/moment';
+import {Tooltip, Collapse, Modal} from 'bootstrap';
+
 let calendar;
 
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-  calendar = new FullCalendar.Calendar(calendarEl, {
-    timeZone: 'Europe/London',
-    events: '/events.json',
-    nowIndicator: true,
-    slotEventOverlap: false,
-    initialView: localStorage.fcView || 'timeGridWeek',
-    initialDate: '2024-06-23',
-    validRange: {
-      start: '2024-06-23',
-      end: '2024-06-28'
+var calendarEl = document.getElementById('calendar');
+calendar = new Calendar(calendarEl, {
+  timeZone: 'Europe/London',
+  events: '/events.json',
+  plugins: [bootstrap5Plugin, momentPlugin, timeGridPlugin, listPlugin, interactionPlugin],
+  themeSystem: 'bootstrap5',
+  nowIndicator: true,
+  slotEventOverlap: false,
+  initialView: localStorage.fcView || 'timeGridWeek',
+  initialDate: '2024-06-23',
+  validRange: {
+    start: '2024-06-23',
+    end: '2024-06-28'
+  },
+  slotMinTime: '08:00:00',
+  slotMaxTime: '22:00:00',
+  headerToolbar: {
+    'start': '',
+    'center': 'timeGridWeek,timeListWeek',
+    'end': ''
+  },
+  buttonText: {
+    'timeGridToday': 'today',
+    'timeGridWeek': 'Calendar',
+    'timeListWeek': 'List'
+  },
+  views: {
+    timeGridToday: {
+      type: 'timeGrid',
+      duration: { days: 1 }
     },
-    slotMinTime: '08:00:00',
-    slotMaxTime: '22:00:00',
-    headerToolbar: {
-      'start': '',
-      'center': 'timeGridWeek,timeListWeek',
-      'end': ''
+    timeGridWeek: {
+      type: 'timeGrid',
+      duration: { days: 5 }
     },
-    buttonText: {
-      'timeGridToday': 'today',
-      'timeGridWeek': 'Calendar',
-      'timeListWeek': 'List'
-    },
-    views: {
-      timeGridToday: {
-        type: 'timeGrid',
-        duration: { days: 1 }
-      },
-      timeGridWeek: {
-        type: 'timeGrid',
-        duration: { days: 5 }
-      },
-      timeListWeek: {
-        type: 'list',
-        duration: { days: 5 }
+    timeListWeek: {
+      type: 'list',
+      duration: { days: 5 }
+    }
+  },
+  dayHeaderFormat: dateFormat,
+  listDayFormat: dateFormat,
+  eventTimeFormat: { // like '14:30'
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+  },
+  eventDidMount: function (info) {
+    if (info.view.type.startsWith("timeGrid")) {
+      let title = info.event.title;
+      if (title.includes(":") && (!title.includes("-") || (title.indexOf(":") < title.indexOf("-")))) {
+        let titleParts = title.split(":");
+        title = "<b>" + titleParts[0] + "</b><br>" + titleParts.slice(1).join(":");
       }
-    },
-    dayHeaderFormat: dateFormat,
-    listDayFormat: dateFormat,
-    eventTimeFormat: { // like '14:30'
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    },
-    themeSystem: 'bootstrap5',
-    eventDidMount: function(info) {
-      if (info.view.type.startsWith("timeGrid")) {
-        let title = info.event.title;
-        if (title.includes(":") && (!title.includes("-") || (title.indexOf(":") < title.indexOf("-")))) {
-          let titleParts = title.split(":");
-          title = "<b>" + titleParts[0] + "</b><br>" + titleParts.slice(1).join(":");
-        }
-        var tooltip = new bootstrap.Tooltip(info.el, {
-          title: title,
-          html: true,
-          placement: 'top',
-          trigger: 'hover',
-          container: 'body'
-        });
+      var tooltip = new Tooltip(info.el, {
+        title: title,
+        html: true,
+        placement: 'top',
+        trigger: 'hover',
+        container: 'body'
+      });
+    }
+  },
+  eventWillUnmount: function (info) {
+    if (info.view.type.startsWith("timeGrid")) {
+      var tooltip = Tooltip.getInstance(info.el);
+      if (tooltip) {
+        tooltip.dispose();
       }
-    },
-    eventWillUnmount: function(info) {
-      if (info.view.type.startsWith("timeGrid")) {
-        var tooltip = bootstrap.Tooltip.getInstance(info.el);
-        if (tooltip) {
-          tooltip.dispose();
-        }
+    }
+  },
+  eventClick: function (info) {
+    if (info.view.type.startsWith("timeGrid")) {
+      if (info.event.extendedProps.type === "session") {
+        let modalId = 'session-modal-' + info.event.extendedProps.session.session_code;
+        let modalEl = document.getElementById(modalId);
+        let modal = Modal.getOrCreateInstance(modalEl)
+        modal.show()
       }
-    },
-    eventClick: function(info) {
-      if (info.view.type.startsWith("timeGrid")) {
-        if (info.event.extendedProps.type === "session") {
-          let modalId = 'session-modal-' + info.event.extendedProps.session.session_code;
-          let modalEl = document.getElementById(modalId);
-          let modal = bootstrap.Modal.getOrCreateInstance(modalEl)
-          modal.show()
-        }
-      } else if (info.view.type === 'timeListWeek') {
-        if (info.jsEvent.target.closest('.accordion')) {
-          info.jsEvent.stopPropagation();
-          return;
-        }
-        let collapseEl = info.el.querySelector('.accordion-collapse.collapse');
-        if (collapseEl) {
-          bootstrap.Collapse.getOrCreateInstance(collapseEl).toggle();
-        }
+    } else if (info.view.type === 'timeListWeek') {
+      if (info.jsEvent.target.closest('.accordion')) {
+        info.jsEvent.stopPropagation();
+        return;
       }
+      let collapseEl = info.el.querySelector('.accordion-collapse.collapse');
+      if (collapseEl) {
+        Collapse.getOrCreateInstance(collapseEl).toggle();
+      }
+    }
 
-      if (info.event.extendedProps.type !== "session" && info.event.extendedProps.link) {
-        window.open(info.event.extendedProps.link, '_blank');
-      }
-    },
-    eventContent: function(arg) {
-      if (arg.view.type === 'timeListWeek') {
-        return renderTimeListEl(arg);
-      }
+    if (info.event.extendedProps.type !== "session" && info.event.extendedProps.link) {
+      window.open(info.event.extendedProps.link, '_blank');
+    }
+  },
+  eventContent: function (arg) {
+    if (arg.view.type === 'timeListWeek') {
+      return renderTimeListEl(arg);
+    }
 
-      return arg.event.title;
-    },
-    eventClassNames: function(arg) {
-      if (arg.event.extendedProps.link) {
-        return ['has-event-link'];
-      }
-      if (arg.event.extendedProps.type === "session") {
-        return ['has-event-modal'];
-      }
-    },
-    datesSet: function(dateInfo) {
-      localStorage.fcView = dateInfo.view.type;
-    },
-  });
-  calendar.render();
-
-  let resetDate = () => calendar.gotoDate('2024-06-23');
-
-  // document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
-  // document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
+    return true;
+  },
+  eventClassNames: function (arg) {
+    if (arg.event.extendedProps.link) {
+      return ['has-event-link'];
+    }
+    if (arg.event.extendedProps.type === "session") {
+      return ['has-event-modal'];
+    }
+  },
+  datesSet: function (dateInfo) {
+    localStorage.fcView = dateInfo.view.type;
+  },
 });
+calendar.render();
+
+
+// document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
+// document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
 
 function renderTimeListEl(arg) {
   let domNodes = [];
@@ -137,11 +145,11 @@ function renderTimeListEl(arg) {
     domNodes.push(divEl);
   }
 
-  return { domNodes: domNodes};
+  return { domNodes: domNodes };
 }
 
 function dateFormat(date) {
-  let dateM = FullCalendar.Moment.toMoment(date.date, calendar);
+  let dateM = toMoment(date.date, calendar);
   let startDate = moment("2024-06-23")
   let dateF = dateM.format('Do MMM');
   let dayN = dateM.diff(startDate, 'days');
