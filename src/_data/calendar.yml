@@ -4,9 +4,7 @@
   title: "ZOO Digital event: National Videogame Museum"
   start_time: "17:30"
   end_time: "20:30"
-  description: >
-    Join us at the National Videogame Museum for a warm welcome to Sheffield.
-    Play over 100 videogames and learn about their history and cultural importance.
+  link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.au665ktdrlwu"
 
 # DAY 1
 - type: registration
@@ -132,7 +130,7 @@
   title: Welcome Reception
   start_time: "18:00"
   end_time: "21:00"
-  description: TBC
+  link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.59hczppjsup2"
 
 # DAY 2
 - type: registration
@@ -253,7 +251,7 @@
   title: "Conference Dinner"
   start_time: "18:30"
   end_time: "23:30"
-  description: TBC
+  link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.uqwmw7kh405p"
 
 # DAY 3
 - type: registration
@@ -370,7 +368,7 @@
   title: "Food Tour"
   start_time: "18:00"
   end_time: "21:00"
-  description: TBC
+  link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.3j34vcxuwhst"
 
 # DAY 4
 - type: registration

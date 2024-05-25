@@ -130,3 +130,13 @@
 .fc-timegrid .has-event-modal {
   cursor: pointer;
 }
+
+.fc-list-event.has-event-link a {
+  color: rgba(var(--bs-secondary-rgb), var(--bs-link-opacity, 1));
+  text-decoration: underline;
+}
+
+.fc-list-event.has-event-link:focus a,
+.fc-list-event.has-event-link:hover a {
+  color: RGBA(86,94,100,var(--bs-link-opacity,1)) !important;
+}

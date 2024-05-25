@@ -140,10 +140,20 @@ function renderTimeListEl(arg) {
     sessionListCl.querySelector('.calendar-sess-title').innerHTML = arg.event.title;
     domNodes.push(sessionListCl);
   } else {
-    let divEl = document.createElement('div');
-    divEl.innerHTML = arg.event.title;
+    let parentEl;
 
-    domNodes.push(divEl);
+    if (arg.event.extendedProps.link) {
+      parentEl = document.createElement('a');
+      parentEl.href = arg.event.extendedProps.link;
+      parentEl.target = '_blank';
+    } else {
+      parentEl = document.createElement('div');
+    
+    }
+
+    parentEl.innerHTML = arg.event.title;
+
+    domNodes.push(parentEl);
   }
 
   return { domNodes: domNodes };
