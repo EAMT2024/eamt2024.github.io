@@ -23,6 +23,11 @@ fluid: false
         <h1 class="page_title">{{ title }}</h1>
       </div>
     </header>
+    {% if alertText %}
+    <div class="alert alert-primary alert-square header-alert text-center">
+      {{ alertText }}
+    </div>
+    {% endif %}
     {# {% include "nav.njk" %} #}
     <main class="{% if fluid %}container-fluid{%else%}container{%endif%} pb-3">
       {{ content | safe }}

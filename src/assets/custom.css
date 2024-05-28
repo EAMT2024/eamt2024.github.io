@@ -14,8 +14,9 @@
 }
 
 /* Header */
-.gsites_header {
+.header-alert {
   margin-bottom: calc(24px + 8px);
+  --bs-alert-padding-y: 0.5rem;
 }
 
 .header_img_contain {
@@ -139,4 +140,8 @@
 .fc-list-event.has-event-link:focus a,
 .fc-list-event.has-event-link:hover a {
   color: RGBA(86,94,100,var(--bs-link-opacity,1)) !important;
+}
+
+.alert-square {
+  border-radius: 0;
 }
