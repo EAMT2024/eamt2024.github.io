@@ -18,8 +18,8 @@ function latexToMarkdown(latex) {
   // replace -- with em dash
   latex = latex.replace(/--/g, '—');
 
-  // replace \citep, \citet, \cite commands with ("(citation removed)")
-  latex = latex.replace(/\\cite(p|t)?{[^}]*}/g, '("(citation removed)")');
+  // replace \citep, \citet, \cite commands with (citation removed)
+  latex = latex.replace(/\\cite(p|t)?{[^}]*}/g, '(citation removed)');
 
 
   // Handle math environments first
