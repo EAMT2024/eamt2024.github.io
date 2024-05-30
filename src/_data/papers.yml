@@ -249,7 +249,7 @@
     The dataset is made available online.
   authors: Dawid Wisniewski, Zofia Rostek, Artur Nowakowski
   number: 23
-  session: poster_1a
+  session: poster_2a
   title: 'FAME-MT Dataset: Formality Awareness Made Easy for Machine Translation Purposes'
   track: research_tech
 - Format: Poster
@@ -266,7 +266,7 @@
     to human performance and translationese.
   authors: Pinzhen Chen, Zhicheng Guo, Barry Haddow, Kenneth Heafield
   number: 26
-  session: poster_1a
+  session: poster_2a
   title: Iterative Translation Refinement with Large Language Models
   track: research_tech
 - Format: Poster
