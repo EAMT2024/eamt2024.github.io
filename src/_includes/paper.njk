@@ -1,15 +1,57 @@
-{% macro showPaper(paper, sessions) %}
-{% if sessions %}
+{% macro showPaper(paper, showSessionBadge=false, showPosterNo=false) %}
+{% if showSessionBadge %}
 {% set session_type = sessions[paper.session_path[0]] %}
 {% set session = session_type[paper.session_path[1]] %}
 {% set session_theme = session_type._THEME %}
-<div class="badge text-bg-{{ session_theme.cls }} float-end session-badge mb-2" data-sess="{{ paper.session }}">
-  <i class="fa-solid fa-{{ session_theme.icon }} me-2"></i>
-  {{ session.title }}
+{% set sess_events = sessionSchedule[paper.session] %}
+<div class="float-md-end mb-2">
+  <div class="badge text-bg-{{ session_theme.cls }} session-badge" data-paper-idx="{{ paper.idx }}">
+    <i class="fa-solid fa-{{ session_theme.icon }} me-2"></i>
+    {{ session.title }}
+  </div>
+  <template id="t-{{ paper.idx }}-title">
+    {{ sess_events[0].date | shortDate }}
+  </template>
+  <template id="t-{{ paper.idx }}-body">
+    <div class="list-group list-group-flush">
+      {% for event in sess_events %}
+      <div class="list-group-item">
+        <div class="fw-bold mb-1">
+          {% if event.session.type == "poster" and event.session.is_boaster %}
+          Poster Boaster
+          <i class="fa-solid fa-bullhorn me-1 fa-fw"></i>
+          {% elif sess_events.length > 1 %}
+          {{ event.session.type | capitalize }} Session
+          {% endif %}
+        </div>
+        <div>
+          {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
+          {{ event.start_time }} - {{ event.end_time }}
+        </div>
+        {% if event.room %}
+        <div>
+          <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
+          {{ event.room }}
+        </div>
+        {% endif %}
+        {% if event.session.type == "poster" and not event.session.is_boaster and config.show_poster_num %}
+          <div>
+          Board {{ paper.poster_no }}
+          </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </template>
+    
 </div>
+
 {% endif %}
 <div class="fw-bold">
-  {{ paper.title | e | markdown | safe }}
+  {% if showPosterNo and paper.poster_no and config.show_poster_num %}
+  {{ paper.poster_no }}.
+  {% endif %}
+  {{ paper.title | e | markdown | safe }}  
 </div>
 <div><i>{{ paper.authors }}</i></div>
 

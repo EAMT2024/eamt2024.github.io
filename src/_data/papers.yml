@@ -20,6 +20,8 @@
   session: poster_1a
   title: Promoting Target Data in Context-aware Neural Machine Translation
   track: research_tech
+  poster_no: 3
+  idx: 0
 - Format: Poster
   abstract: "This study investigates the potential of Generative Pre-trained Transformer\
     \ models, specifically GPT-4, to generate machine translation resources for the\
@@ -39,6 +41,8 @@
   title: 'A Human Perspective on GPT-4 Translations: Analysing Faroese to English
     News and Blog Text Translations'
   track: research_tech
+  poster_no: 2
+  idx: 1
 - Format: Oral
   abstract: 'Our proposed method, RESETOX (REdo
 
@@ -81,6 +85,7 @@
   title: 'ReSeTOX: Re-learning attention weights for toxicity mitigation in machine
     translation'
   track: research_tech
+  idx: 2
 - Format: Poster
   abstract: An all-too-present bottleneck for text classification model development
     is the need to annotate training data and this need is multiplied for multilingual
@@ -99,6 +104,8 @@
   session: poster_1a
   title: Using Machine Translation to Augment Multilingual Classification
   track: research_tech
+  poster_no: 5
+  idx: 3
 - Format: Oral
   abstract: "In Neural Machine Translation, models are often trained with teacher\
     \ forcing and suffer from exposure bias due to the discrepancy between training\
@@ -122,6 +129,7 @@
   title: 'Recovery Should Never Deviate from Ground Truth: Mitigating Exposure Bias
     in Neural Machine Translation'
   track: research_tech
+  idx: 4
 - Format: Poster
   abstract: This paper explores Minimum Bayes Risk (MBR) decoding for self-improvement
     in machine translation (MT), particularly for domain adaptation and low-resource
@@ -140,6 +148,8 @@
   title: 'Chasing COMET: Leveraging Minimum Bayes Risk Decoding for Self-Improving
     Machine Translation'
   track: research_tech
+  poster_no: 2
+  idx: 5
 - Format: Oral
   abstract: "Terminologically constrained machine translation is a hot topic in the\
     \ field of neural machine translation. One major way to categorize constrained\
@@ -165,6 +175,7 @@
   title: 'Mitra: Improving Terminologically Constrained Translation Quality with Backtranslations
     and Flag Diacritics'
   track: research_tech
+  idx: 6
 - Format: Poster
   abstract: 'This paper explores a novel method to modify existing pre-trained word
     embedding models of spoken languages for Sign Language glosses. These newly-generated
@@ -184,6 +195,8 @@
   session: poster_1a
   title: Bootstrapping Pre-trained Word Embedding Models for Sign Language Gloss Translation
   track: research_tech
+  poster_no: 1
+  idx: 7
 - Format: Oral
   abstract: Providing quality scores along with Machine Translation (MT) output during
     inference, so-called reference-free Quality Estimation (QE), is crucial to inform
@@ -208,6 +221,7 @@
   title: Quality Estimation with $k$-nearest Neighbors and Automatic Evaluation for
     Model-specific Quality Estimation
   track: research_tech
+  idx: 8
 - Format: Poster
   abstract: "Subword regularized models leverage multiple subword tokenizations of\
     \ one target sentence during training. However, selecting one tokenization during\
@@ -232,6 +246,8 @@
   title: 'SubMerge: Merging Equivalent Subword Tokenizations for Subword Regularized
     Models in Neural Machine Translation'
   track: research_tech
+  poster_no: 4
+  idx: 9
 - Format: Poster
   abstract: People use language for various purposes. Apart from sharing information,
     individuals may use it to express emotions or to show respect for another person.
@@ -252,6 +268,8 @@
   session: poster_2a
   title: 'FAME-MT Dataset: Formality Awareness Made Easy for Machine Translation Purposes'
   track: research_tech
+  poster_no: 3
+  idx: 10
 - Format: Poster
   abstract: We propose and analyse iteratively prompting a large language model to
     self-correct a translation, with inspiration from that benefiting from vast pre-training
@@ -269,6 +287,8 @@
   session: poster_2a
   title: Iterative Translation Refinement with Large Language Models
   track: research_tech
+  poster_no: 5
+  idx: 11
 - Format: Poster
   abstract: 'Post-editing is crucial in the real world because neural machine translation
     (NMT) sometimes makes errors.
@@ -296,6 +316,8 @@
   session: poster_2a
   title: 'Detector--Corrector: Edit-Based Automatic Post Editing for Human Post Editing'
   track: research_tech
+  poster_no: 2
+  idx: 12
 - Format: Poster
   abstract: 'Generative Large Language Models (LLMs) have achieved remarkable advances
     in various NLP tasks. In this work, our aim is to explore the multilingual capabilities
@@ -326,6 +348,8 @@
   title: Assessing Translation Capabilities of Large Language Models involving English
     and Indian Languages
   track: research_tech
+  poster_no: 1
+  idx: 13
 - Format: Poster
   abstract: 'The effectiveness of neural machine translation is markedly constrained
     in low-resource scenarios, where the scarcity of parallel data hampers the development
@@ -347,6 +371,8 @@
   title: 'Improving NMT from a Low-Resource Source Language: A Use Case from Catalan
     to Chinese via Spanish'
   track: research_tech
+  poster_no: 4
+  idx: 14
 - Format: Poster
   abstract: In document-level neural machine translation (DocNMT), multi-encoder approaches
     are common in encoding context and source sentences. Recent studies \cite{li-etal-2020-multi-encoder}
@@ -370,6 +396,8 @@
   title: A Case Study on Context-Aware Neural Machine Translation with Multi-Task
     Learning
   track: research_tech
+  poster_no: 1
+  idx: 15
 - Format: Oral
   abstract: "Reinforcement learning from human feedback (RLHF) is a recent technique\
     \ to improve the quality of the text generated by a language model, making it\
@@ -395,6 +423,7 @@
   title: 'Aligning Neural Machine Translation Models: Human Feedback in Training and
     Inference'
   track: research_tech
+  idx: 16
 - Format: Poster
   abstract: 'The increasing volume of scientific research necessitates effective communication
     across language barriers. Machine translation (MT) offers a promising solution
@@ -414,6 +443,8 @@
   session: poster_3a
   title: 'Enhancing Scientific Discourse: Machine Translation for the Scientific Domain'
   track: research_tech
+  poster_no: 4
+  idx: 17
 - Format: Oral
   abstract: Machine translations are found to be lexically poorer than human translations.
     The loss of lexical diversity through MT poses an issue in the automatic translation
@@ -431,6 +462,7 @@
   session: oral_7b
   title: Towards Tailored Recovery of Lexical Diversity in Literary Machine Translation
   track: research_tech
+  idx: 18
 - Format: Poster
   abstract: "Machine translation (MT) models are known to suffer from gender bias,\
     \ especially when translating into languages with extensive gendered morphology.\
@@ -451,6 +483,8 @@
   title: Enhancing Gender-Inclusive Machine Translation with Neomorphemes and Large
     Language Models
   track: research_tech
+  poster_no: 3
+  idx: 19
 - Format: poster
   abstract: "Prompt engineering in LLMs has shown potential for improving translation\
     \ quality. However, the potential of incorporating translation concepts in prompt\
@@ -470,6 +504,8 @@
   title: 'Prompting ChatGPT for Translation: A Comparative Analysis of Translation
     Brief and Persona Prompts'
   track: research_ts_us
+  poster_no: 11
+  idx: 20
 - Format: poster
   abstract: 'Assessing the performance of interpreting services is a complex task,
     given the nuanced nature of spoken language translation, the strategies that interpreters
@@ -496,6 +532,8 @@
   title: Exploring the Correlation Between Human and Machine Evaluation of Simultaneous
     Speech Translation
   track: research_ts_us
+  poster_no: 7
+  idx: 21
 - Format: poster
   abstract: 'Translation Quality Evaluation (TQE) is an essential step of the modern
     translation production process. TQE is critical in assessing both machine translation
@@ -522,6 +560,8 @@
   title: 'MTUncertainty: Assessing the Need for Post-editing of Machine Translation
     Outputs by Fine-tuning OpenAI LLMs'
   track: research_ts_us
+  poster_no: 9
+  idx: 22
 - Format: oral
   abstract: 'New language technologies are driving major changes in the language services
     of institutions worldwide, including the Swiss Confederation. Based on a definition
@@ -547,6 +587,7 @@
     \ the Swiss Confederation: Navigating technological change in an institutional\
     \ setting"
   track: research_ts_us
+  idx: 23
 - Format: oral
   abstract: 'Machine translation models sometimes lead to added toxicity: translated
     outputs may contain more toxic content that the original input. In this paper,
@@ -566,6 +607,7 @@
   title: Added Toxicity Mitigation at Inference Time for Multimodal and Massively
     Multilingual Translation
   track: research_ts_us
+  idx: 24
 - Format: poster
   abstract: "This study conducts a comprehensive comparison of three leading LLMs\u2014\
     GPT-4, Claude 3, and Gemini\u2014in two translation-related tasks: automatic post-editing\
@@ -583,6 +625,8 @@
   title: 'LLMs in Post-Translation Workflows: Comparing Performance in Post-Editing
     and Error Analysis'
   track: research_ts_us
+  poster_no: 8
+  idx: 25
 - Format: poster
   abstract: This paper presents a comparative analysis between human translation (HT)
     and post-edited machine translation (PEMT) across three datasets collected in
@@ -603,6 +647,8 @@
   title: 'Post-editors as Gatekeepers of Lexical and Syntactic Diversity: Comparative
     Analysis of Human Translation and Post-editing in Professional Settings'
   track: research_ts_us
+  poster_no: 10
+  idx: 26
 - Format: poster
   abstract: This paper describes work in progress on Visualisation tools to foster
     collaborations between translators and computational scientists. We aim to describe
@@ -618,6 +664,8 @@
   session: poster_1b
   title: Exploring NMT Explainability for Translators Using NMT Visualising Tools
   track: research_ts_us
+  poster_no: 6
+  idx: 27
 - Format: oral
   abstract: "Translations into a language differ in systematic ways from text originally\
     \ authored in the same language.\nThese differences, collectively known as translationese,\
@@ -639,6 +687,7 @@
   session: oral_3b
   title: 'Mitigating Translationese with GPT-4: Strategies and Performance'
   track: research_ts_us
+  idx: 28
 - Format: poster
   abstract: 'The improvements of neural machine translation systems make translation
     and post-edition pipelines ever more effective, and for a wider range of applications.
@@ -659,6 +708,8 @@
   session: poster_3b
   title: 'Translate your Own: a Post-Edition Experiment in the NLP domain'
   track: research_ts_us
+  poster_no: 10
+  idx: 29
 - Format: poster
   abstract: "This paper presents a user study with 11 professional English-Spanish\
     \ translators in the legal domain. We analysed whether negative or positive translators\u2019\
@@ -680,6 +731,8 @@
   title: 'Pre-task perceptions of MT influence quality and productivity: implications
     for training and the importance of better translator-computer interactions'
   track: research_ts_us
+  poster_no: 8
+  idx: 30
 - Format: poster
   abstract: Automatic speech synthesis has seen rapid development and integration
     in domains as diverse as accessibility services, translation, or language learning
@@ -700,6 +753,8 @@
   title: Bayesian Hierarchical Modelling for Analysing the Effect of Speech Synthesis
     on Post-Editing Machine Translation
   track: research_ts_us
+  poster_no: 5
+  idx: 31
 - Format: oral
   abstract: In this paper, we describe results of a study on evaluation of intralingual
     machine translation. The study focuses on machine translations of medical texts
@@ -720,6 +775,7 @@
   session: oral_6a
   title: Evaluation of intralingual machine translation for health communication
   track: research_ts_us
+  idx: 32
 - Format: poster
   abstract: We report an experiment in which we use machine learning to validate the
     empirical objectivity of a novel annotation taxonomy for behavioral translation
@@ -739,6 +795,8 @@
   title: Using Machine Learning to Validate a Novel Taxonomy of Phenomenal Translation
     States
   track: research_ts_us
+  poster_no: 11
+  idx: 33
 - Format: poster
   abstract: "This paper reports the preliminary results\nof a survey aimed at identifying\
     \ and ex-\nploring the attitudes and recommendations\nof machine translation quality\
@@ -754,6 +812,8 @@
   session: poster_3b
   title: Perceptions of Educators on MTQA Curriculum and Instruction
   track: research_ts_us
+  poster_no: 7
+  idx: 34
 - Format: poster
   abstract: Translation quality and its assessment are of great importance in the
     context of human as well as machine translation. Methods range from human annotation
@@ -772,6 +832,8 @@
   title: Comparative Quality Assessment of Human and Machine Translation with Best-Worst
     Scaling
   track: research_ts_us
+  poster_no: 6
+  idx: 35
 - Format: poster
   abstract: In spite of recent successes in improving Machine Translation quality
     overall, MT engines require a large amount of resources, which leads to markedly
@@ -788,6 +850,8 @@
   title: Quantifying the Contribution of MWEs and Polysemy in Translation Errors for
     English--Igbo MT
   track: research_ts_us
+  poster_no: 9
+  idx: 36
 - Format: oral
   abstract: "With the advent and success of trainable automatic evaluation metrics,\
     \ creating annotated machine translation evaluation data sets is increasingly\
@@ -807,6 +871,7 @@
   title: 'Analysis of the Annotations from a Crowd MT Evaluation Initiative: Case
     Study for the Spanish-Basque Pair'
   track: research_ts_us
+  idx: 37
 - Format: Oral
   abstract: Incorporating extra-textual context such as film metadata into the machine
     translation (MT) pipeline can enhance translation quality, as indicated by automatic
@@ -826,6 +891,7 @@
   title: A Case Study on Contextual Machine Translation in a Professional Scenario
     of Subtitling
   track: impl_cs
+  idx: 38
 - Format: Poster
   abstract: In this paper the process of training and evaluating NMT systems for a
     language pair including a low-resource language variety is presented. A parallel
@@ -840,6 +906,8 @@
   title: Training an NMT system for legal texts of a low-resource language variety
     South Tyrolean German - Italian
   track: impl_cs
+  poster_no: 11
+  idx: 39
 - Format: Poster
   abstract: This paper investigates the effectiveness of combining machine translation
     (MT) systems and large language models (LLMs) to produce gender-inclusive translations
@@ -859,6 +927,8 @@
   title: Implementing Gender-Inclusivity in MT Output using Automatic Post-Editing
     with LLMs
   track: impl_cs
+  poster_no: 9
+  idx: 40
 - Format: Poster
   abstract: The paper presents findings from a comprehensive market study commissioned
     by the European Commission, aimed at analysing multilinguality of European websites
@@ -874,6 +944,8 @@
   title: 'Advancing Digital Language Equality in Europe: A Market Study and Open-Source
     Solutions for Multilingual Websites'
   track: impl_cs
+  poster_no: 6
+  idx: 41
 - Format: Oral
   abstract: 'In this paper, we study the translation abilities of Large Language Models
     (LLMs) for business IT texts.
@@ -901,6 +973,7 @@
   title: Exploring the Effectiveness of LLM Domain Adaptation for Business IT Machine
     Translation
   track: impl_cs
+  idx: 42
 - Format: Poster
   abstract: 'This paper presents a multilingual aligned corpus of political debates
     from the United Nations (UN) General Assembly sessions between 1978 and 2021,
@@ -917,6 +990,8 @@
   session: poster_2b
   title: Creating and Evaluating a Multilingual Corpus of UN General Assembly Debates
   track: impl_cs
+  poster_no: 7
+  idx: 43
 - Format: Poster
   abstract: "This paper examines the suitability of a large language model (LLM),\
     \ GPT-4, for generating multiple choice questions (MCQs) aimed at assessing subject\
@@ -940,6 +1015,8 @@
   title: 'Generating subject-matter expertise assessment questions with GPT-4: a medical
     translation use-case'
   track: impl_cs
+  poster_no: 8
+  idx: 44
 - Format: Poster
   abstract: "While large language models (LLMs) pre-trained on massive amounts of\
     \ unpaired language data have reached the state-of-the-art in machine translation\
@@ -961,6 +1038,8 @@
   title: Prompting Large Language Models with Human Error Markings for Self-Correcting
     Machine Translation
   track: impl_cs
+  poster_no: 10
+  idx: 45
 - Format: Oral
   abstract: Machine translation (MT) research is most typically English-centric. In
     recent years, massively multilingual translation systems have also been increasingly
@@ -979,6 +1058,7 @@
   session: oral_5a
   title: 'Estonian-Centric Machine Translation: Data, Models, and Challenges'
   track: impl_cs
+  idx: 46
 - Format: Poster
   abstract: "Misinformation on social media is a concern for content creators, consumers\
     \ and regulators alike. Transitude looks at mis-information, generated by Machine\
@@ -995,6 +1075,8 @@
   title: 'Transitude: Machine Translation on Social Media: MT as a potential tool
     for opinion (mis)formation'
   track: pr_pj
+  poster_no: 21
+  idx: 47
 - Format: Poster
   abstract: The  LiLowLa (``Lightweight neural translation technologies for low-resource
     languages'') project aims to enhance machine translation (MT) and translation
@@ -1008,6 +1090,8 @@
   session: poster_1c
   title: Lightweight neural translation technologies for low-resource languages
   track: pr_pj
+  poster_no: 15
+  idx: 48
 - Format: Poster
   abstract: This project aims to develop a multilingual notification system for asylum
     reception centres in Belgium using machine translation. The system will allow
@@ -1024,6 +1108,8 @@
   session: poster_1c
   title: 'MaTIAS: Machine Translation to Inform Asylum Seekers'
   track: pr_pj
+  poster_no: 16
+  idx: 49
 - Format: Poster
   abstract: SmartBiC, an 18-month innovation project funded by the Spanish Government,
     aims at improving the full process of collecting, filtering and selecting in-domain
@@ -1042,6 +1128,8 @@
   session: poster_2c
   title: 'SmartBiC: Smart Harvesting of Bilingual Corpora from the Internet'
   track: pr_pj
+  poster_no: 20
+  idx: 50
 - Format: Poster
   abstract: This EAMT-funded eye-tracking study investigates the impact of Machine
     Translation Post-Editing and Automatic Speech Recognition on English-Romanian
@@ -1053,6 +1141,8 @@
   title: An Eye-Tracking Study on the Use of Machine Translation Post-Editing and
     Automatic Speech Recognition in Translations for the Medical Domain
   track: pr_pj
+  poster_no: 12
+  idx: 51
 - Format: Poster
   abstract: This paper describes the research project MAKE-NMTViz, designed to help
     translators visualize the outputs of Neural Machine Translation using XAI visualization
@@ -1064,6 +1154,8 @@
   session: poster_1c
   title: The MAKENMTViz project
   track: pr_pj
+  poster_no: 20
+  idx: 52
 - Format: Poster
   abstract: In this paper, we present the MULTILINGTOOL project, led by the Elhuyar
     Foundation and funded by the European Commission under the CREA-MEDIA2022-INNOVBUSMOD
@@ -1077,6 +1169,8 @@
   title: MULTILINGTOOL, Development of an automatic multilingual subtitling and dubbing
     system
   track: pr_pj
+  poster_no: 18
+  idx: 53
 - Format: Poster
   abstract: The CALCULUS project, drawing on human capabilities of imagination and
     commonsense for natural language understanding (NLU), aims to advance machine-based
@@ -1103,6 +1197,8 @@
   session: poster_1c
   title: 'ERC Advanced Grant Project CALCULUS: Extending the Boundary of Machine Translation'
   track: pr_pj
+  poster_no: 13
+  idx: 54
 - Format: Poster
   abstract: The GAMETRAPP project (TED2021-129789B-I00), funded by the Spanish Ministry
     of Science and Innovation, aims to teach PE notions of research abstracts to non-professional
@@ -1116,6 +1212,8 @@
   title: 'GAMETRAPP project in progress: Designing a gamified environment for post-editing
     research abstracts'
   track: pr_pj
+  poster_no: 14
+  idx: 55
 - Format: Poster
   abstract: The RCnum project is funded by the Swiss National Science Foundation and
     aims at producing a multilingual and semantically rich online edition of the Registers
@@ -1131,6 +1229,8 @@
   title: 'RCnum: A Semantic and Multilingual Online Edition of the Geneva Council
     Registers from 1545 to 1550'
   track: pr_pj
+  poster_no: 19
+  idx: 56
 - Format: Poster
   abstract: This article presents the main functionality of the postedit.me app. Postedit.me
     is a software program that supports machine translation post-editing training
@@ -1142,6 +1242,8 @@
   session: poster_1c
   title: 'MTPE quality evaluation in translator education: the postedit.me app'
   track: pr_pj
+  poster_no: 17
+  idx: 57
 - Format: Poster
   abstract: Artificial intelligence (AI) is quickly becoming an exciting new technology
     for the translation industry in form of large language models (LLMs). AI-based
@@ -1156,6 +1258,8 @@
   session: poster_2c
   title: Boosting Machine Translation with AI-powered terminology features
   track: pr_pj
+  poster_no: 13
+  idx: 58
 - Format: Poster
   abstract: 'This research project aims to develop a comprehensive methodology to
     help make machine translation (MT) systems more gender-inclusive for society.
@@ -1172,6 +1276,8 @@
   title: Automatic detection of (potential) factors in the source text leading to
     gender bias in machine translation
   track: pr_pj
+  poster_no: 12
+  idx: 59
 - Format: Poster
   abstract: The INCREC project aims to uncover the creative stages of professional
     translators to understand how technology can be best applied to the translation
@@ -1185,6 +1291,8 @@
   title: 'INCREC: Uncovering the creative process of translated content using machine
     translation'
   track: pr_pj
+  poster_no: 17
+  idx: 60
 - Format: Poster
   abstract: We introduce SMUGRI-MT, an online neural machine translation system that
     covers 20 low-resource Finno-Ugric languages, along with seven high-resource languages.
@@ -1193,6 +1301,8 @@
   session: poster_2c
   title: SMUGRI-MT - Machine Translation System for Low-Resource Finno-Ugric Languages
   track: pr_pj
+  poster_no: 21
+  idx: 61
 - Format: Poster
   abstract: plain X is a 4-in-1 solution for language adaptation. The software is
     an outcome of European HLT research and is by now in use as the major human language
@@ -1205,6 +1315,8 @@
   session: poster_2c
   title: 'plain X: 4-in-1 multilingual adaptation platform'
   track: pr_pj
+  poster_no: 19
+  idx: 62
 - Format: Poster
   abstract: "This paper describes the project \u201CBridgeAI: Boosting Regulatory\
     \ Implementation with Data-driven insights, Global expertise, and Ethics for AI\u201D\
@@ -1221,6 +1333,8 @@
   session: poster_3c
   title: The BridgeAI Project
   track: pr_pj
+  poster_no: 18
+  idx: 63
 - Format: Poster
   abstract: Research on gender bias in Machine Translation (MT) predominantly focuses
     on binary gender or few languages. In this project, we investigate the ability
@@ -1236,6 +1350,8 @@
   session: poster_2c
   title: 'GeFMT: Gender-Fair Language in German Machine Translation'
   track: pr_pj
+  poster_no: 16
+  idx: 64
 - Format: Poster
   abstract: Addressing online disinformation requires analysing narratives across
     languages to help fact-checkers and journalists sift through large amounts of
@@ -1250,6 +1366,8 @@
   title: 'ExU: AI Models for Examining Multilingual Disinformation Narratives and
     Understanding their Spread'
   track: pr_pj
+  poster_no: 15
+  idx: 65
 - Format: Poster
   abstract: VIGILANT (Vital IntelliGence to Investigate ILlegAl DisiNformaTion) is
     a three-year Horizon Europe project that will equip European Law Enforcement Agencies
@@ -1267,17 +1385,20 @@
   session: poster_2c
   title: Multilinguality in the VIGILANT project
   track: pr_pj
+  poster_no: 18
+  idx: 66
 - Format: Poster
-  abstract: "This paper presents a dataset for evaluating machine translation of emotion-loaded\
-    \ user-generated content. It contains human-annotated quality evaluation data\
-    \ and post-edited reference translations. The dataset is available at our GitHub\
-    \ repository."
+  abstract: This paper presents a dataset for evaluating machine translation of emotion-loaded
+    user-generated content. It contains human-annotated quality evaluation data and
+    post-edited reference translations. The dataset is available at our GitHub repository.
   authors: "Shenbin Qian, Constantin Orasan, F\xE9lix do Carmo, Diptesh Kanojia"
   number: 23
   session: poster_3c
   title: Evaluating Machine Translation for Emotion-loaded User Generated Content
     (TransEval4Emo-UGC)
   track: pr_pj
+  poster_no: 14
+  idx: 67
 - Format: Poster
   abstract: "Among the services provided by Softcatal\xE0, a non-profit 25-year-old\
     \ grassroots organization that localizes software into Catalan and develops software\
@@ -1293,6 +1414,8 @@
   session: poster_2c
   title: "Community-driven machine translation for the Catalan language at Softcatal\xE0"
   track: pr_pj
+  poster_no: 14
+  idx: 68
 - Format: Poster
   abstract: "MTxGames is a doctoral research project examining three different machine\
     \ translation (MT) post-editing (PE) methods in the context of translating creative\
@@ -1308,6 +1431,8 @@
   title: 'The MTxGames Project: NMT and LLMs as Tools for Professional Translators
     of Video Games'
   track: pr_pj
+  poster_no: 20
+  idx: 69
 - Format: Poster
   abstract: "SignON, a 3-year Horizon 20202 project addressing the lack of technology\
     \ and services for MT between sign languages (SLs) and spoken languages (SpLs)\
@@ -1334,6 +1459,8 @@
   title: "SignON \u2013 a Co-creative Machine Translation for Sign and Spoken Languages\
     \ (end-of-project results, contributions and lessons learned)"
   track: pr_pj
+  poster_no: 17
+  idx: 70
 - Format: Poster
   abstract: In the relief operations of international humanitarian organisations,
     non-governmental organisations (NGOs) often encounter language needs when delivering
@@ -1345,6 +1472,8 @@
   session: poster_3c
   title: The Use of MT by humanitarian NGOs in Hong Kong
   track: pr_pj
+  poster_no: 21
+  idx: 71
 - Format: Poster
   abstract: We describe the first results of the High Performance Language Technologies
     project (HPLT), a 3-year EU-funded project that started in September 2022. The
@@ -1361,6 +1490,8 @@
   session: poster_3c
   title: HPLT's First Release of Data and Models
   track: pr_pj
+  poster_no: 15
+  idx: 72
 - Format: Poster
   abstract: LT-LiDER is an Erasmus+ cooperation pro-ject with two main aims. The first
     is to map the landscape of technological capabilities required to work as a language
@@ -1377,6 +1508,8 @@
   session: poster_3c
   title: Literacy in Digital Environments and Resources (LT-LiDER)
   track: pr_pj
+  poster_no: 16
+  idx: 73
 - Format: Poster
   abstract: We present how at Unbabel we have been using Large Language Models to
     apply a Cultural Transcreation (CT) product on customer support (CS) emails and
@@ -1393,6 +1526,8 @@
   session: poster_3c
   title: Cultural Transcreation with LLMs as a new product
   track: pr_pj
+  poster_no: 13
+  idx: 74
 - Format: Poster
   abstract: The AI4Culture project (2023-2025), funded by the European Commission,
     and involving a 12-partner consortium led by the National Technical University
@@ -1411,6 +1546,8 @@
   session: poster_3c
   title: 'AI4Culture: Towards Multilingual Access for Cultural Heritage Data'
   track: pr_pj
+  poster_no: 12
+  idx: 75
 - Format: Poster
   abstract: "This paper describes the project \u201CNextGenAI: Center for Responsible\
     \ AI\u201D, a 39-month Mobilizing and Green Agenda for Business Innovation funded\
@@ -1431,4 +1568,5 @@
   session: poster_3c
   title: The Center for Responsible AI Project
   track: pr_pj
-
+  poster_no: 19
+  idx: 76

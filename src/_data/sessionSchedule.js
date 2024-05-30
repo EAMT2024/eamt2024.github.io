@@ -22,5 +22,7 @@ module.exports = function() {
     newSessions[sess_str].push(e);
   }
 
+  // console.log(newSessions);
+
   return newSessions;
 }

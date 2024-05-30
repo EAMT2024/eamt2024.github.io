@@ -25,12 +25,12 @@ alertText: "Presentation session assignments are provisional and subject to chan
 
     <div id="collapse-{{track}}" class="accordion-collapse collapse track-collapse" aria-labelledby="heading-{{track}}">
       <div class="accordion-body list-group list-group-flush">
-        {% from "paper.njk" import showPaper %}
+        {% from "paper.njk" import showPaper with context %}
 
         {% for paper in papers %}
         <div class="list-group-item">
           {# {{ sessionSchedule[paper.session] | dump }} #}
-          {{ showPaper(paper, sessions) }}
+          {{ showPaper(paper, true) }}
         </div>
         {% endfor %}
       </div>
@@ -39,35 +39,3 @@ alertText: "Presentation session assignments are provisional and subject to chan
   {% endfor %}
 </div>
 
-
-{% for sess_key, sess_events in sessionSchedule %}
-<template id="t-{{sess_key}}-title">
-  {{ sess_events[0].date | shortDate }}
-</template>
-<template id="t-{{sess_key}}-body">
-  <div class="list-group list-group-flush">
-    {% for event in sess_events %}
-    <div class="list-group-item">
-      <div class="fw-bold mb-1">
-        {% if event.session.type == "poster" and event.session.is_boaster %}
-        Poster Boaster
-        <i class="fa-solid fa-bullhorn me-1 fa-fw"></i>
-        {% elif sess_events.length > 1 %}
-        {{ event.session.type | capitalize }} Session
-        {% endif %}
-      </div>
-      <div>
-        {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
-        {{ event.start_time }} - {{ event.end_time }}
-      </div>
-      {% if event.room %}
-      <div>
-        <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
-        {{ event.room }}
-      </div>
-      {% endif %}
-    </div>
-    {% endfor %}
-  </div>
-</template>
-{% endfor %}

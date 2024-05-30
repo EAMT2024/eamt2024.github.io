@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const sessBadgeList = document.querySelectorAll('.session-badge')
   
   sessBadgeList.forEach(sessBadgeEl => {
-    let sessId = sessBadgeEl.dataset.sess;
+    let paperIdx = sessBadgeEl.dataset.paperIdx;
     new Popover(sessBadgeEl, {
-      'content': document.getElementById(`t-${sessId}-body`).innerHTML,
+      'content': document.getElementById(`t-${paperIdx}-body`).innerHTML,
       'html': true,
       'trigger': 'hover click focus',
       'customClass': 'session-badge-popover',
-      'title': document.getElementById(`t-${sessId}-title`).innerHTML,
+      'title': document.getElementById(`t-${paperIdx}-title`).innerHTML,
       'placement': 'right'
     })
   })

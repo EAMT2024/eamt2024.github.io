@@ -52,6 +52,7 @@ calendar = new Calendar(calendarEl, {
       duration: { days: 5 }
     }
   },
+  eventOrder: "start,-duration,allDay,order",
   dayHeaderFormat: dateFormat,
   listDayFormat: dateFormat,
   eventTimeFormat: { // like '14:30'

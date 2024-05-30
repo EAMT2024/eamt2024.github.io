@@ -51,10 +51,10 @@ alertText: "This is a provisional schedule and is subject to change."
         </div>
         <div class="modal-body px-0">
           <ul class="list-group list-group-flush" id="session-list-{{session}}">
-            {% from "paper.njk" import showPaper %}
+            {% from "paper.njk" import showPaper with context %}
             {% for paper in papers %}
               <li class="list-group-item">
-                {{ showPaper(paper) }}
+                {{ showPaper(paper, showSessionBadge=false, showPosterNo=true) }}
               </li>
             {% endfor %}
           </ul>
@@ -75,10 +75,10 @@ alertText: "This is a provisional schedule and is subject to change."
       </div>
       <div class="accordion-collapse collapse" id="cal-sess-{{session}}-collapse">
         <ul class="list-group list-group-flush">
-          {% from "paper.njk" import showPaper %}
+          {% from "paper.njk" import showPaper with context %}
           {% for paper in papers %}
             <li class="list-group-item">
-              {{ showPaper(paper) }}
+              {{ showPaper(paper, showSessionBadge=false, showPosterNo=true) }}
             </li>
           {% endfor %}
         </ul>

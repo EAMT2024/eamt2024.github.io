@@ -11,6 +11,7 @@ eleventyImport:
     "end": "{{ event.date | jsonDate }}T{{ event.end_time}}:00",
     "color": "{{ event.color }}",
     "textColor": "{{ event.textColor }}",
+    "order": {{ loop.index }},
     "extendedProps": {{ event | dump | safe }}
   }{% if not loop.last %},{% endif %}
 {% endfor %}
