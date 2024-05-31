@@ -8,6 +8,8 @@ import moment from 'moment';
 import { toMoment } from '@fullcalendar/moment';
 import {Tooltip, Collapse, Modal} from 'bootstrap';
 
+import { renderEl as mathRenderEl } from './math';
+
 let calendar;
 
 var calendarEl = document.getElementById('calendar');
@@ -139,6 +141,7 @@ function renderTimeListEl(arg) {
     let sessionListEl = document.getElementById(sessionListId);
     let sessionListCl = sessionListEl.content.cloneNode(true);
     sessionListCl.querySelector('.calendar-sess-title').innerHTML = arg.event.title;
+    mathRenderEl(sessionListCl);
     domNodes.push(sessionListCl);
   } else {
     let parentEl;

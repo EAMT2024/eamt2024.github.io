@@ -142,6 +142,10 @@
   color: RGBA(86,94,100,var(--bs-link-opacity,1)) !important;
 }
 
+.fc-list-event a.abstract-collapse-link {
+  text-decoration: underline;
+}
+
 .alert-square {
   border-radius: 0;
 }

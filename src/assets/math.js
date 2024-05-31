@@ -1,7 +1,8 @@
 import  renderMathInElement from 'katex/dist/contrib/auto-render';
 
-document.addEventListener("DOMContentLoaded", function() {
-  renderMathInElement(document.body, {
+
+let renderEl = (el) => {
+  renderMathInElement(el, {
     // customised options
     // • auto-render specific keys, e.g.:
     delimiters: [
@@ -13,4 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // • rendering keys, e.g.:
     throwOnError : false
   });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderEl(document.body)
 });
+
+export {
+  renderEl
+}
