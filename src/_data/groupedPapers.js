@@ -46,6 +46,7 @@ function latexToMarkdown(latex) {
 module.exports = function () {
     let papersByTrack = {}
     let papersBySession = {}
+    let papersByCoarseSession = {}
     paperData.forEach(paper => {
       let track = paper.track
       if (!papersByTrack[track]) {
@@ -64,10 +65,15 @@ module.exports = function () {
         paper.session_path = [null, null]
       } else {    
         paper.session_path = paper.session.split("_")
+        paper.coarse_session = paper.session.slice(0, -1)
         if (paper.session_path.length !== 2) {
           console.log("Invalid session for paper: " + paper.title)
           paper.session_path = [null, null]
         }
+      }
+
+      if (!papersByCoarseSession[paper.coarse_session]) {
+        papersByCoarseSession[paper.coarse_session] = []
       }
 
       // paper.session_data = sessions[paper.session_path[0]][paper.session_path[1]]
@@ -75,6 +81,7 @@ module.exports = function () {
 
       papersByTrack[track].push(paper)
       papersBySession[session].push(paper)
+      papersByCoarseSession[paper.coarse_session].push(paper)
     })
 
     // Sort the papers alphabetically
@@ -90,8 +97,15 @@ module.exports = function () {
       })
     }
 
+    for (let session in papersByCoarseSession) {
+      papersByCoarseSession[session].sort((a, b) => {
+        return a.title.localeCompare(b.title)
+      })
+    }
+
     return {
       byTrack: papersByTrack,
-      bySession: papersBySession
+      bySession: papersBySession,
+      byCoarseSession: papersByCoarseSession,
     }
 }

@@ -1,0 +1,48 @@
+---
+layout: plain
+pagination:
+  data: groupedPapers.byCoarseSession
+  size: 1
+  alias: session
+permalink: "/sessions/{{ session | slugify }}/index.html"
+---
+
+{% set sessionData = groupedPapers.byCoarseSession[session] %}
+{% set sessionDetails = sessions[sessionData[0].session_path[0]][sessionData[0].session_path[1]] %}
+<div>
+    <h1>{{ sessionDetails.title }} </h1>
+
+    {% if sessionData.length > 1 %}
+    <table>
+      <tbody>
+        {% for track, papers in sessionData | sort(false, false, 'poster_no') | groupby("track") %}
+        <tr class="track-row">
+          <td colspan=2>{{ tracks[track] }}</td>
+        </tr>
+        {% for paper in papers %}
+        <tr class="paper-row">
+          <td class="paper-no">{{ paper.poster_no }}.</td>
+          <td class="paper-details">
+            {{ paper.title }}<br>
+            {# <i>{{ paper.authors }}</i> #}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      {% endfor %}
+    </table>
+
+    {% endif %}
+</div>
+<div class="logos">
+  <div>
+    <img src="/img/eamt.png" alt="">
+
+  </div>
+  <div>
+    <img src="/img/zoo.png" alt="">
+  </div>
+  <div>
+    <img src="/img/uos.png" alt="">
+  </div>
+</div>

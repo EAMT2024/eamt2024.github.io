@@ -1,0 +1,121 @@
+@import url(https://fonts.bunny.net/css?family=source-sans-pro:400,400i,500,700,700i,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;;
+}
+
+html {
+  font-size: 2.8vw;
+}
+
+@page {
+  size: A3;
+  margin: 32pt;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+}
+
+body {
+  padding: 1rem;
+}
+
+@media print {
+  html {
+    font-size: 26px;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+.ignoreme {
+  display: none;
+}
+
+@media print {
+  .ignoreme {
+    display: block;
+    color: white;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+.track-row {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.track-row td {
+  padding-top: 0.5rem;
+}
+
+.paper-no {
+  text-align: right;
+  vertical-align: top;
+  padding-right: 0.25rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: space-between; */
+}
+
+.logos img {
+  width: 6cm;
+  height: auto;
+}
+
+.logos div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .logos div:nth-child(1) {
+  justify-content: start;
+}
+
+.logos div:nth-child(2) {
+  justify-content: center;
+}
+
+.logos div:nth-child(3) {
+  justify-content: end;
+} */
