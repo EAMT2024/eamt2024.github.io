@@ -79,11 +79,11 @@
   {% endfor %}
 </div> #}
 
-<div><a class="link-secondary" data-bs-toggle="collapse" href="#abstract-{{ paper.track}}-{{ paper.number }}"
-    role="button" aria-expanded="false" aria-controls="abstract-{{ paper.number }}">
+<div><a class="link-secondary" data-bs-toggle="collapse" href="#abstract-{{ paper.idx}}"
+    role="button" aria-expanded="false" aria-controls="abstract-{{ paper.idx }}">
     <i class="fa-solid fa-plus me-1"></i>abstract
   </a></div>
-<p id="abstract-{{ paper.track }}-{{ paper.number }}"
+<p id="abstract-{{ paper.idx }}" 
   class="collapse toggling-collapse abstract-collapse border-start border-3 ps-3 mt-1">
   {{ paper.abstract | e | markdown | safe }}
 </p>
