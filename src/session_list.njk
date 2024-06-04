@@ -5,6 +5,8 @@ pagination:
   size: 1
   alias: session
 permalink: "/sessions/{{ session | slugify }}/index.html"
+scripts:
+  - /assets/math.js
 ---
 
 {% set sessionData = groupedPapers.byCoarseSession[session] %}
