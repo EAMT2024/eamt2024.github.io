@@ -40,6 +40,12 @@ function latexToMarkdown(latex) {
   // Convert \textbf to ** for bold outside math environments
   latex = latex.replace(/\\textbf{([^}]*)}/g, '**$1**');
 
+  // Convert \textsc to small caps
+  latex = latex.replace(/\\textsc{([^}]*)}/g, '<span class="textsc">$1</span>');
+
+  // convert \url to plain URL
+  latex = latex.replace(/\\url{([^}]*)}/g, '$1');
+
   return latex;
 }
 

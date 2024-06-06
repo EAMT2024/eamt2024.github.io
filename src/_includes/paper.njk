@@ -85,6 +85,6 @@
   </a></div>
 <p id="abstract-{{ paper.idx }}" 
   class="collapse toggling-collapse abstract-collapse border-start border-3 ps-3 mt-1">
-  {{ paper.abstract | e | markdown | safe }}
+  {{ paper.abstract | markdown | safe }}
 </p>
 {% endmacro %}

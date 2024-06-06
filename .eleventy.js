@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
 
   const md = new markdownIt({
     html: true,
+    linkify: true,
   });
   
   eleventyConfig.addFilter("markdown", (content) => {

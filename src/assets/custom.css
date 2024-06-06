@@ -149,3 +149,7 @@
 .alert-square {
   border-radius: 0;
 }
+
+.textsc {
+  font-variant: small-caps;
+}

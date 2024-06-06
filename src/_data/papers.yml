@@ -929,6 +929,18 @@
     Also, the study highlights that while the combined approach can improve translation
     fluency, the effectiveness and reliability of the post-edited translations can
     vary based on the language of the prompts used.
+- idx: 77
+  or_num: 7
+  title: "CantonMT: Cantonese to English NMT Platform with Fine-Tuned Models using Real and Synthetic Back-Translation Data"
+  authors: "Kung Yin Hong, Lifeng Han, Riza Batista-Navarro, Goran Nenadic"
+  track: impl_cs
+  format: poster
+  session: poster_2b
+  poster_no: 12
+  abstract: "Neural Machine Translation (NMT) for low-resource languages remains a challenge for many NLP researchers. In this work, we deploy a standard data augmentation methodology by back-translation to a new language translation direction, i.e., Cantonese-to-English. 
+    We present the models we fine-tuned using the limited amount of real data and the synthetic data we generated using back-translation by three models: OpusMT, NLLB, and mBART.
+    We carried out automatic evaluation using a range of different metrics including those that are lexical-based and embedding-based.
+    Furthermore, we create a user-friendly interface for the models we included in this project, \\textsc{ CantonMT}, and make it available to facilitate Cantonese-to-English MT research. Researchers can add more models to this platform via our open-source\\textsc{ CantonMT} toolkit, available at \\url{https://github.com/kenrickkung/CantoneseTranslation}." 
 - idx: 41
   or_num: 8
   title: 'Advancing Digital Language Equality in Europe: A Market Study and Open-Source
@@ -1119,7 +1131,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 20
+  poster_no: 21
   abstract: SmartBiC, an 18-month innovation project funded by the Spanish Government,
     aims at improving the full process of collecting, filtering and selecting in-domain
     parallel content to be used for machine translation and language model tuning
@@ -1251,7 +1263,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 13
+  poster_no: 14
   abstract: Artificial intelligence (AI) is quickly becoming an exciting new technology
     for the translation industry in form of large language models (LLMs). AI-based
     functionality could be used to improve the output of neural machine translation
@@ -1268,7 +1280,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 12
+  poster_no: 13
   abstract: 'This research project aims to develop a comprehensive methodology to
     help make machine translation (MT) systems more gender-inclusive for society.
     The goal is the creation of a detection system, a machine learning (ML) model
@@ -1286,7 +1298,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 17
+  poster_no: 18
   abstract: The INCREC project aims to uncover the creative stages of professional
     translators to understand how technology can be best applied to the translation
     of literary and audio-visual texts, and to analyse the im-pact of these processes
@@ -1300,7 +1312,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 21
+  poster_no: 22
   abstract: We introduce SMUGRI-MT, an online neural machine translation system that
     covers 20 low-resource Finno-Ugric languages, along with seven high-resource languages.
 - idx: 62
@@ -1310,7 +1322,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 19
+  poster_no: 20
   abstract: plain X is a 4-in-1 solution for language adaptation. The software is
     an outcome of European HLT research and is by now in use as the major human language
     and AI platform at Deutsche Welle. plain X is a one-stop-shop for automated transcription,
@@ -1342,7 +1354,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 16
+  poster_no: 17
   abstract: Research on gender bias in Machine Translation (MT) predominantly focuses
     on binary gender or few languages. In this project, we investigate the ability
     of commercial MT systems and neural models to translate using gender-fair language
@@ -1361,7 +1373,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 15
+  poster_no: 16
   abstract: Addressing online disinformation requires analysing narratives across
     languages to help fact-checkers and journalists sift through large amounts of
     data. The ExU project focuses on developing AI-based models for multilingual disinformation
@@ -1377,7 +1389,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 18
+  poster_no: 19
   abstract: VIGILANT (Vital IntelliGence to Investigate ILlegAl DisiNformaTion) is
     a three-year Horizon Europe project that will equip European Law Enforcement Agencies
     (LEAs) with advanced disinformation detection and analysis tools to investigate
@@ -1407,7 +1419,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 14
+  poster_no: 15
   abstract: "Among the services provided by Softcatal\xE0, a non-profit 25-year-old\
     \ grassroots organization that localizes software into Catalan and develops software\
     \ to ease the generation of Catalan content, one of the most used is its machine\
