@@ -900,7 +900,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 11
+  poster_no: 12
   abstract: In this paper the process of training and evaluating NMT systems for a
     language pair including a low-resource language variety is presented. A parallel
     corpus for this language pair in the domain of legal texts has been compiled.
@@ -916,7 +916,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 9
+  poster_no: 10
   abstract: This paper investigates the effectiveness of combining machine translation
     (MT) systems and large language models (LLMs) to produce gender-inclusive translations
     from English to Spanish. The study uses a multi-step approach where a translation
@@ -936,7 +936,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 12
+  poster_no: 7
   abstract: "Neural Machine Translation (NMT) for low-resource languages remains a challenge for many NLP researchers. In this work, we deploy a standard data augmentation methodology by back-translation to a new language translation direction, i.e., Cantonese-to-English. 
     We present the models we fine-tuned using the limited amount of real data and the synthetic data we generated using back-translation by three models: OpusMT, NLLB, and mBART.
     We carried out automatic evaluation using a range of different metrics including those that are lexical-based and embedding-based.
@@ -993,7 +993,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 7
+  poster_no: 8
   abstract: 'This paper presents a multilingual aligned corpus of political debates
     from the United Nations (UN) General Assembly sessions between 1978 and 2021,
     which covers five of the six official UN languages: Arabic, Chinese, English,
@@ -1012,7 +1012,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 8
+  poster_no: 9
   abstract: "This paper examines the suitability of a large language model (LLM),\
     \ GPT-4, for generating multiple choice questions (MCQs) aimed at assessing subject\
     \ matter expertise (SME) in the domain of medical translation. The main objective\
@@ -1037,7 +1037,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 10
+  poster_no: 11
   abstract: "While large language models (LLMs) pre-trained on massive amounts of\
     \ unpaired language data have reached the state-of-the-art in machine translation\
     \ (MT) of general domain texts, post-editing (PE) is still required to correct\
