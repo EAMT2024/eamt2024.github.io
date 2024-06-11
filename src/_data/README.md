@@ -13,4 +13,5 @@ In this directory are YML files which contain human-written data about the confe
 * `calendarByDay.js` - Groups calendar by day (unused currently)
 * `calendarMerged.js` - Formats and merges in defaults for the calendar
 * `groupedPapers.js` - Generates papers grouped by track and session
-* `sessionSchedule.js` - Generates list of events asigneed to each session, used to handle poster sessions having the actual event and boaster.
+* `papersTabular.js` - Generates list of papers as a CSV string
+* `sessionSchedule.js` - Generates list of events assigned to each session, used to handle poster sessions having the actual event and boaster.
