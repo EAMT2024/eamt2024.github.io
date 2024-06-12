@@ -1097,8 +1097,8 @@
     \ Galiano-Jim\xE9nez, Miquel Espl\xE0-Gomis"
   track: pr_pj
   format: poster
-  session: poster_1c
-  poster_no: 15
+  session: poster_3c
+  poster_no: 16
   abstract: The  LiLowLa (``Lightweight neural translation technologies for low-resource
     languages'') project aims to enhance machine translation (MT) and translation
     memory (TM) technologies, particularly for low-resource language pairs, where
@@ -1338,7 +1338,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 18
+  poster_no: 19
   abstract: "This paper describes the project \u201CBridgeAI: Boosting Regulatory\
     \ Implementation with Data-driven insights, Global expertise, and Ethics for AI\u201D\
     , a one-year science-for-policy research project funded by the Portuguese Foundation\
@@ -1436,7 +1436,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 20
+  poster_no: 21
   abstract: "MTxGames is a doctoral research project examining three different machine\
     \ translation (MT) post-editing (PE) methods in the context of translating creative\
     \ texts from video games, focusing on translation speed, cognitive effort, quality,\
@@ -1458,7 +1458,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 17
+  poster_no: 18
   abstract: "SignON, a 3-year Horizon 20202 project addressing the lack of technology\
     \ and services for MT between sign languages (SLs) and spoken languages (SpLs)\
     \ ended in December 2023. SignON was unprecedented. Not only it addressed the\
@@ -1480,7 +1480,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 21
+  poster_no: 22
   abstract: In the relief operations of international humanitarian organisations,
     non-governmental organisations (NGOs) often encounter language needs when delivering
     services (Tesseur 2022). This project examines the language needs of humanitarian
@@ -1514,7 +1514,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 16
+  poster_no: 17
   abstract: LT-LiDER is an Erasmus+ cooperation pro-ject with two main aims. The first
     is to map the landscape of technological capabilities required to work as a language
     and/or trans-lation expert in the digitalised and datafied language industry.
@@ -1569,7 +1569,7 @@
   track: pr_pj
   format: poster
   session: poster_3c
-  poster_no: 19
+  poster_no: 20
   abstract: "This paper describes the project \u201CNextGenAI: Center for Responsible\
     \ AI\u201D, a 39-month Mobilizing and Green Agenda for Business Innovation funded\
     \ by the Portuguese Recovery and Resilience Plan, under the Recovery and Resilience\
