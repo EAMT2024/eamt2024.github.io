@@ -6,9 +6,27 @@ import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
 import moment from 'moment';
 import { toMoment } from '@fullcalendar/moment';
-import {Tooltip, Collapse, Modal} from 'bootstrap';
+import { Collapse, Modal, Popover} from 'bootstrap';
 
 import { renderEl as mathRenderEl } from './math';
+
+
+function makeLocationEl(location, icon = true, tint = true) {
+  let locationEl = document.createElement('div')
+
+  if (tint) {
+    locationEl.classList.add('text-muted')
+  }
+
+  if (icon) {
+    let iconEl = document.createElement('i')
+    iconEl.classList.add('fa-solid', 'fa-location-dot', 'me-2', 'sess-location-icon')
+    locationEl.appendChild(iconEl)
+  }
+
+  locationEl.appendChild(document.createTextNode(location));
+  return locationEl;
+}
 
 let calendar;
 
@@ -67,22 +85,31 @@ calendar = new Calendar(calendarEl, {
       let title = info.event.title;
       if (title.includes(":") && (!title.includes("-") || (title.indexOf(":") < title.indexOf("-")))) {
         let titleParts = title.split(":");
-        title = "<b>" + titleParts[0] + "</b><br>" + titleParts.slice(1).join(":");
+        title = titleParts[0] + "<br>" + titleParts.slice(1).join(":");
       }
-      var tooltip = new Tooltip(info.el, {
+      var popover = new Popover(info.el, {
         title: title,
         html: true,
         placement: 'top',
         trigger: 'hover',
-        container: 'body'
-      });
+        customClass: 'popover-low-pad'
+      })
+
+      if (info.event.extendedProps.location) {
+        let content = document.createElement('div');
+        content.appendChild(makeLocationEl(info.event.extendedProps.location, true, false));
+        popover.setContent({
+          '.popover-header': title,
+          '.popover-body': content
+        });
+      }
     }
   },
   eventWillUnmount: function (info) {
     if (info.view.type.startsWith("timeGrid")) {
-      var tooltip = Tooltip.getInstance(info.el);
-      if (tooltip) {
-        tooltip.dispose();
+      var popover = Popover.getInstance(info.el);
+      if (popover) {
+        popover.dispose();
       }
     }
   },
@@ -130,7 +157,6 @@ calendar = new Calendar(calendarEl, {
 });
 calendar.render();
 
-
 // document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
 // document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
 
@@ -140,22 +166,40 @@ function renderTimeListEl(arg) {
     let sessionListId = 'list-view-sess-' + arg.event.extendedProps.session.session_code;
     let sessionListEl = document.getElementById(sessionListId);
     let sessionListCl = sessionListEl.content.cloneNode(true);
-    sessionListCl.querySelector('.calendar-sess-title').innerHTML = arg.event.title;
+    let sessionTitleParent = sessionListCl.querySelector('.calendar-sess-title');
+
+    let sessionTitleWrapper = document.createElement('div');
+    sessionTitleWrapper.classList.add('sess-title-wrap');
+
+    let sessionTitleEl = document.createElement('div');
+    sessionTitleEl.innerText = arg.event.title;
+    sessionTitleWrapper.appendChild(sessionTitleEl);
+    sessionTitleParent.appendChild(sessionTitleWrapper);
+  
+    if (arg.event.extendedProps.location) {
+      let locationEl = makeLocationEl(arg.event.extendedProps.location);
+      sessionTitleWrapper.appendChild(locationEl)
+    }
+
     mathRenderEl(sessionListCl);
     domNodes.push(sessionListCl);
   } else {
-    let parentEl;
+    let parentEl = document.createElement('div');
 
     if (arg.event.extendedProps.link) {
-      parentEl = document.createElement('a');
-      parentEl.href = arg.event.extendedProps.link;
-      parentEl.target = '_blank';
+      let linkEl = document.createElement('a');
+      linkEl.href = arg.event.extendedProps.link;
+      linkEl.target = '_blank';
+      linkEl.innerText = arg.event.title;
+      parentEl.appendChild(linkEl);
     } else {
-      parentEl = document.createElement('div');
-    
+      parentEl.appendChild(document.createTextNode(arg.event.title));
     }
 
-    parentEl.innerHTML = arg.event.title;
+    if (arg.event.extendedProps.location) {
+      let locationEl = makeLocationEl(arg.event.extendedProps.location);
+      parentEl.appendChild(locationEl)
+    }
 
     domNodes.push(parentEl);
   }

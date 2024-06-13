@@ -5,6 +5,7 @@
   start_time: "17:30"
   end_time: "20:30"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.au665ktdrlwu"
+  location: "National Videogame Museum, Angel St"
 
 # DAY 1
 - type: registration
@@ -17,6 +18,7 @@
   title: Conference Opening
   start_time: "09:00"
   end_time: "09:30"
+  location: "LT1"
 - type: session
   date: 2024-06-24
   start_time: "09:30"
@@ -24,6 +26,7 @@
   session:
     type: oral
     idx: 1a
+  location: "LT1"
 - type: session
   date: 2024-06-24
   start_time: "10:00"
@@ -42,6 +45,7 @@
   start_time: "11:00"
   end_time: "12:00"
   link: https://eamt2024.sheffield.ac.uk/programme/keynote-speakers#h.qjn0rzu6ewqs
+  location: LT1
 - type: session
   date: 2024-06-24
   start_time: "12:00"
@@ -233,9 +237,10 @@
   end_time: "15:15"
 - type: plenary
   date: 2024-06-25
-  title: "Panel Discussion (TBC)"
+  title: "Panel Discussion: LLMs and Machine Translation for Low-Resource Languages: Bridging Gaps or Widening Divides?"
   start_time: "15:15"
   end_time: "15:45"
+  link: https://eamt2024.sheffield.ac.uk/programme/panel-discussion
 - type: break
   title: Coffee Break
   date: 2024-06-25
@@ -252,6 +257,7 @@
   start_time: "18:30"
   end_time: "23:30"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.uqwmw7kh405p"
+  location: "Kelham Island Museum (main entrance), Alma Street"
 
 # DAY 3
 - type: registration
@@ -369,6 +375,7 @@
   start_time: "18:00"
   end_time: "21:00"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.3j34vcxuwhst"
+  location: "Various in Kelham island - meeting point TBC"
 
 # DAY 4
 - type: registration

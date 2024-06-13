@@ -19,9 +19,13 @@ type:
     oral:
       color: "#d1ebfd"
       textColor: "#000000"
+      location: "LT1"
     poster:
       color: "#daf5d3"
       textColor: "#000000"
+      location: "Outside LTs"
+    poster_boaster:
+      location: "LT1"
   keynote:
     color: "#d946ef"
     textColor: "#ffffff"

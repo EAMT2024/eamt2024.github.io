@@ -1,4 +1,7 @@
 @import url(https://fonts.bunny.net/css?family=source-sans-pro:400,400i,500,700,700i,900);
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import 'katex/dist/katex.min.css';
 
 /* Themeing */
 :root {
@@ -133,7 +136,7 @@
 }
 
 .fc-list-event.has-event-link a {
-  color: rgba(var(--bs-secondary-rgb), var(--bs-link-opacity, 1));
+  color: rgba(var(--bs-body-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: underline;
 }
 
@@ -152,4 +155,20 @@
 
 .textsc {
   font-variant: small-caps;
+}
+
+.sess-location-icon {
+  color: rgba(var(--bs-secondary-rgb), 0.8);
+}
+
+.popover-low-pad  {
+  --bs-popover-header-padding-x: 0.5rem;
+  --bs-popover-header-padding-y: 0.5rem;
+  --bs-popover-body-padding-x: 0.5rem;
+  --bs-popover-body-padding-y: 0.5rem;
+}
+
+.popover:not(:has(.popover-body)) .popover-header {
+  border-bottom: none;
+  border-radius: var(--bs-popover-inner-border-radius);
 }

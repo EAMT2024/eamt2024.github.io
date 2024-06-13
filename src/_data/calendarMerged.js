@@ -6,6 +6,7 @@ let tracks = req("src/_data/tracks.yml")
 let groupedPapers = require("./groupedPapers.js")();
 let papersBySession = groupedPapers.bySession;
 var clone = require('clone');
+let config = req('src/_data/config.yml');
 
 const capitalize = (s) => {
   if (typeof s !== 'string') return ''
@@ -21,6 +22,11 @@ module.exports = function () {
     if (event.type === "session") {
       let typeDefaults = calendarDefaults.type[event.type][event.session.type] || {}
       defaults = {...defaults, ...typeDefaults}
+
+      if (event.session.is_boaster) {
+        let boasterDefaults = calendarDefaults.type.session.poster_boaster || {}
+        defaults = {...defaults, ...boasterDefaults }
+      }
     } else {
       let typeDefaults = calendarDefaults.type[event.type] || {}
       defaults = {...defaults, ...typeDefaults}
@@ -46,6 +52,10 @@ module.exports = function () {
 
     if (event.prefixType) {
       event.title = `${capitalize(event.type)}: ${event.title}`
+    }
+
+    if (!config.show_locations) {
+      delete event.location
     }
 
     return event
