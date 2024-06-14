@@ -8,7 +8,6 @@ permalink: "/sessions/{{ session | slugify }}/index.html"
 scripts:
   - /assets/math.js
 ---
-
 {% set sessionData = groupedPapers.byCoarseSession[session] %}
 {% set sessionDetails = sessions[sessionData[0].session_path[0]][sessionData[0].session_path[1]] %}
 <div>

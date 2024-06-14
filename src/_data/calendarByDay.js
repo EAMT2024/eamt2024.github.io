@@ -1,11 +1,9 @@
-const {DateTime} = require('luxon')
-const req = require('require-yml')
-let calendarData = req('src/_data/calendar.yml');
+let calendarData = require('./calendarMerged.js')();
 
 module.exports = function () {
   let eventsByDate = {}
   calendarData.forEach(event => {
-    let date = DateTime.fromISO(event.date)
+    let date = event.date;
     if (!eventsByDate[date]) {
       eventsByDate[date] = []
     }

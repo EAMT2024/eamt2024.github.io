@@ -1,6 +1,5 @@
 const req = require('require-yml')
-let sessionData = req('src/_data/sessions.yml');
-let calendarData = req('src/_data/calendar.yml');
+const calendarData = require('./calendarMerged.js')();
 
 module.exports = function() {
   let newSessions = {};

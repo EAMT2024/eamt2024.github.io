@@ -1,0 +1,31 @@
+---
+layout: main.njk
+permalink: /schedule/text/
+title: Schedule
+---
+{% for day, events in calendarByDay %}
+  <h2>{{events[0].date | shortDate}}</h2>
+  {% for event in events %}
+    <h3>{{ event.start_time }} - {{ event.end_time }}: {{ event.title }}</h3>
+    {% if config.show_locations and event.location %}
+      <p>Location: {{ event.location }}</p>
+    {% endif %}
+    {% if event.link %}
+    <p><a href="{{ event.link }}" target="_blank">More information about this event</a></p>
+    {% endif %}
+    {% if event.type == "session" %}
+    <h4 class="fs-6 fw-bold">Papers at this session</h4>
+    <ul>
+      {% for paper in groupedPapers.bySession[event.session.session_code] %}
+      <li>
+        {{ paper.title }}
+        {% if event.session.type == "poster" and not event.session.is_boaster and paper.poster_no and config.show_poster_num %}
+        (board {{ paper.poster_no}})
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  {% endfor %}
+  <hr>
+{% endfor %}
