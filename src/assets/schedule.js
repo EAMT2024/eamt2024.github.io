@@ -13,6 +13,7 @@ import { renderEl as mathRenderEl } from './math';
 
 function makeLocationEl(location, icon = true, tint = true) {
   let locationEl = document.createElement('div')
+  locationEl.classList.add('sess-location')
 
   if (tint) {
     locationEl.classList.add('text-muted')
@@ -160,6 +161,8 @@ calendar.render();
 // document.querySelector('.fc-timeGridWeek-button').addEventListener('click', resetDate)
 // document.querySelector('.fc-timeListWeek-button').addEventListener('click', resetDate)
 
+const titleWrapperClasses = ['sess-title-wrap'];
+
 function renderTimeListEl(arg) {
   let domNodes = [];
   if (arg.event.extendedProps.type === "session" && !arg.event.extendedProps.session.is_boaster) {
@@ -169,7 +172,7 @@ function renderTimeListEl(arg) {
     let sessionTitleParent = sessionListCl.querySelector('.calendar-sess-title');
 
     let sessionTitleWrapper = document.createElement('div');
-    sessionTitleWrapper.classList.add('sess-title-wrap');
+    sessionTitleWrapper.classList.add(...titleWrapperClasses);
 
     let sessionTitleEl = document.createElement('div');
     sessionTitleEl.innerText = arg.event.title;
@@ -185,6 +188,7 @@ function renderTimeListEl(arg) {
     domNodes.push(sessionListCl);
   } else {
     let parentEl = document.createElement('div');
+    parentEl.classList.add(...titleWrapperClasses)
 
     if (arg.event.extendedProps.link) {
       let linkEl = document.createElement('a');
@@ -210,7 +214,7 @@ function renderTimeListEl(arg) {
 function dateFormat(date) {
   let dateM = toMoment(date.date, calendar);
   let startDate = moment("2024-06-23")
-  let dateF = dateM.format('Do MMM');
+  let dateF = dateM.format('ddd Do');
   let dayN = dateM.diff(startDate, 'days');
 
   return dateF + ' (Day ' + dayN + ')';

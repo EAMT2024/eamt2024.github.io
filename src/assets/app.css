@@ -172,3 +172,7 @@
   border-bottom: none;
   border-radius: var(--bs-popover-inner-border-radius);
 }
+
+.fc-list-event-title .sess-location {
+  font-size: 0.85rem;
+}

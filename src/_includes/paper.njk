@@ -25,19 +25,20 @@
           {% endif %}
         </div>
         <div>
-          {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
+          <i class="fa-solid fa-clock me-1 fa-fw"></i>
           {{ event.start_time }} - {{ event.end_time }}
         </div>
-        {% if event.room %}
+        {% if event.location and config.show_locations %}
         <div>
-          <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
-          {{ event.room }}
+          <i class="fa-solid fa-location-dot me-1 fa-fw"></i>
+          {{ event.location }}
         </div>
         {% endif %}
         {% if event.session.type == "poster" and not event.session.is_boaster and config.show_poster_num %}
-          <div>
-          Board {{ paper.poster_no }}
-          </div>
+        <div>
+          <i class="fa-solid fa-file me-1 fa-fw"></i>
+          Poster #{{ paper.poster_no }}
+        </div>
         {% endif %}
       </div>
       {% endfor %}

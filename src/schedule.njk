@@ -2,13 +2,15 @@
 layout: main.njk
 title: "Programme"
 eleventyImport:
-  collections: ["calendar", "groupedPapers", "sessions", "sessionSchedule", "tracks"]
+  collections: ["calendar", "calendarMerged", "groupedPapers", "sessions", "sessionSchedule", "tracks"]
 
 scripts:
   - /assets/schedule.js
 
 alertText: "This is a provisional schedule and is subject to change."
 ---
+
+<a href="/schedule/text/" class="visually-hidden-focusable">Click here for a plain text version of the schedule.</a>
 
 <div id='calendar'></div>
 
@@ -39,10 +41,10 @@ alertText: "This is a provisional schedule and is subject to change."
                 {# <i class="fa-solid fa-clock me-1 fa-fw"></i> #}
                 {{ event.date | shortDate }} {{ event.start_time }} - {{ event.end_time }}
               </div>
-              {% if event.room %}
+              {% if config.show_locations and event.location %}
               <div>
                 <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
-                {{ event.room }}
+                {{ event.location }}
               </div>
               {% endif %}
             </div>
@@ -70,8 +72,8 @@ alertText: "This is a provisional schedule and is subject to change."
   <div class="accordion">
     <div class="accordion-item">
       <div class="accordion-header">
-        <button class="accordion-button collapsed calendar-sess-title" type="button" data-bs-toggle="collapse" data-bs-target="#cal-sess-{{session}}-collapse" aria-expanded="false" aria-controls="cal-sess-{{session}}-collapse">
-        </button>
+        <div class="accordion-button collapsed calendar-sess-title" type="button" data-bs-toggle="collapse" data-bs-target="#cal-sess-{{session}}-collapse" aria-expanded="false" aria-controls="cal-sess-{{session}}-collapse">
+        </div>
       </div>
       <div class="accordion-collapse collapse" id="cal-sess-{{session}}-collapse">
         <ul class="list-group list-group-flush">
