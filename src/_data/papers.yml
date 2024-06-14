@@ -493,7 +493,7 @@
   track: research_ts_us
   format: poster
   session: poster_3b
-  poster_no: 11
+  poster_no: 9
   abstract: "Prompt engineering in LLMs has shown potential for improving translation\
     \ quality. However, the potential of incorporating translation concepts in prompt\
     \ design re-mains largely underexplored. Against this backdrop, this paper discusses\
@@ -697,7 +697,7 @@
   track: research_ts_us
   format: poster
   session: poster_3b
-  poster_no: 10
+  poster_no: 11
   abstract: 'The improvements of neural machine translation systems make translation
     and post-edition pipelines ever more effective, and for a wider range of applications.
     In this paper, we evaluate the effectiveness of such a pipeline for the translation
@@ -842,7 +842,7 @@
   track: research_ts_us
   format: poster
   session: poster_3b
-  poster_no: 9
+  poster_no: 10
   abstract: In spite of recent successes in improving Machine Translation quality
     overall, MT engines require a large amount of resources, which leads to markedly
     lower quality for lesser-resourced languages. This study explores the case of
