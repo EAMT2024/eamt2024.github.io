@@ -1,4 +1,10 @@
 # DAY 0
+- type: registration
+  date: 2024-06-23
+  title: "Registration @ Zoo Digital Event"
+  location: "National Videogame Museum, Angel St"
+  start_time: "17:30"
+  end_time: "19:30"
 - type: social
   date: 2024-06-23
   title: "ZOO Digital event: National Videogame Museum"
@@ -115,20 +121,12 @@
   date: 2024-06-24
   start_time: "16:00"
   end_time: "16:30"
-- type: session
+- type: plenary
   date: 2024-06-24
+  title: "Panel Discussion: LLMs and Machine Translation for Low-Resource Languages: Bridging Gaps or Widening Divides?"
   start_time: "16:30"
-  end_time: "17:00"
-  session: 
-    type: oral
-    idx: 3a
-- type: session
-  date: 2024-06-24
-  start_time: "17:00"
   end_time: "17:30"
-  session: 
-    type: oral
-    idx: 3b
+  link: https://eamt2024.sheffield.ac.uk/programme/panel-discussion
 - type: social
   date: 2024-06-24
   title: Welcome Reception
@@ -147,20 +145,16 @@
   title: "Conference Announcements"
   start_time: "09:00"
   end_time: "09:15"
-- type: session
+- type: plenary
   date: 2024-06-25
+  title: "Best Thesis Award"
   start_time: "09:15"
   end_time: "09:45"
-  session:
-    type: oral
-    idx: 4a
-- type: session
+- type: plenary
   date: 2024-06-25
+  title: "EAMT 25 years & John Hutchins MT Archive showcase"
   start_time: "09:45"
   end_time: "10:15"
-  session:
-    type: oral
-    idx: 4b
 - type: break
   title: Coffee Break
   date: 2024-06-25
@@ -172,14 +166,14 @@
   end_time: "11:15"
   session:
     type: oral
-    idx: 5a
+    idx: 3a
 - type: session
   date: 2024-06-25
   start_time: "11:15"
   end_time: "11:45"
   session:
     type: oral
-    idx: 5b
+    idx: 3b
 - type: session
   date: 2024-06-25
   start_time: "11:45"
@@ -230,17 +224,20 @@
   session:
     type: poster
     idx: 2c
-- type: plenary
+- type: session
   date: 2024-06-25
-  title: "Best Thesis Award"
   start_time: "14:45"
   end_time: "15:15"
-- type: plenary
+  session:
+    type: oral
+    idx: 4a
+- type: session
   date: 2024-06-25
-  title: "Panel Discussion: LLMs and Machine Translation for Low-Resource Languages: Bridging Gaps or Widening Divides?"
   start_time: "15:15"
   end_time: "15:45"
-  link: https://eamt2024.sheffield.ac.uk/programme/panel-discussion
+  session:
+    type: oral
+    idx: 4b
 - type: break
   title: Coffee Break
   date: 2024-06-25
@@ -287,14 +284,14 @@
   end_time: "11:15"
   session:
     type: oral
-    idx: 6a
+    idx: 5a
 - type: session
   date: 2024-06-26
   start_time: "11:15"
   end_time: "11:45"
   session:
     type: oral
-    idx: 6b
+    idx: 5b
 - type: session
   date: 2024-06-26
   start_time: "11:45"
@@ -351,14 +348,14 @@
   end_time: "15:15"
   session:
     type: oral
-    idx: 7a
+    idx: 6a
 - type: session
   date: 2024-06-26
   start_time: "15:15"
   end_time: "15:45"
   session:
     type: oral
-    idx: 7b
+    idx: 6b
 - type: break
   title: Coffee Break
   date: 2024-06-26

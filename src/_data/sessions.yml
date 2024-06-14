@@ -10,39 +10,33 @@ oral:
     track: research_tech
   2a:
     title: "Oral Session 2"
-    track: research_tech
+    track: research_ts_us
   2b:
     title: "Oral Session 2"
     track: research_ts_us
   3a:
     title: "Oral Session 3"
-    track: research_ts_us
+    track: impl_cs
   3b:
     title: "Oral Session 3"
-    track: research_ts_us
+    track: impl_cs
   4a:
     title: "Oral Session 4"
     track: impl_cs
   4b:
     title: "Oral Session 4"
-    track: impl_cs
+    track: research_tech
   5a:
     title: "Oral Session 5"
-    track: impl_cs
+    track: research_ts_us
   5b:
     title: "Oral Session 5"
-    track: research_tech
+    track: research_ts_us
   6a:
     title: "Oral Session 6"
-    track: research_ts_us
+    track: research_tech
   6b:
     title: "Oral Session 6"
-    track: research_ts_us
-  7a:
-    title: "Oral Session 7"
-    track: research_tech
-  7b:
-    title: "Oral Session 7"
     track: research_tech
 poster:
   _THEME:
