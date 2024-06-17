@@ -44,6 +44,8 @@ module.exports = function(eleventyConfig) {
     domDiff: false
   })
 
+  eleventyConfig.addPassthroughCopy("public");
+
   // Return your Object options:
   return {
     dir: {
