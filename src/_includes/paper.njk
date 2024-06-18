@@ -5,10 +5,17 @@
 {% set session_theme = session_type._THEME %}
 {% set sess_events = sessionSchedule[paper.session] %}
 <div class="float-md-end mb-2">
+  {% if paper.format == 'virtual' %}
+  <div class="badge text-bg-light session-badge" data-bs-toggle="tooltip" data-bs-title="Video available online, not presented in session.">
+    <i class="fa-solid fa-video me-2"></i>
+    Virtual
+  </div>
+  {% else %}
   <div class="badge text-bg-{{ session_theme.cls }} session-badge" data-paper-idx="{{ paper.idx }}">
     <i class="fa-solid fa-{{ session_theme.icon }} me-2"></i>
     {{ session.title }}
   </div>
+  {% endif %}
   <template id="t-{{ paper.idx }}-title">
     {{ sess_events[0].date | shortDate }}
   </template>

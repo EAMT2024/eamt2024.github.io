@@ -43,6 +43,32 @@
     \ assesses the translation quality offered by GPT-4. The findings reveal GPT-4\u2019\
     s strengths in general translation tasks, while also highlighting its limitations\
     \ in capturing cultural nuances."
+- idx: 2
+  or_num: 7
+  title: 'ReSeTOX: Re-learning attention weights for toxicity mitigation in machine
+    translation'
+  authors: "Javier Garc\xEDa Gilabert, Carlos Escolano, Marta R. Costa-juss\xE0"
+  track: research_tech
+  format: virtual
+  session: null
+  abstract: 'Our proposed method, RESETOX (REdo
+    SEarch if TOXic), addresses the issue of
+    Neural Machine Translation (NMT) gener-
+    ating translation outputs that contain toxic
+    words not present in the input. The ob-
+    jective is to mitigate the introduction of
+    toxic language without the need for re-
+    training. In the case of identified added
+    toxicity during the inference process, RE-
+    SETOX dynamically adjusts the key-value
+    self-attention weights and re-evaluates the
+    beam search hypotheses. Experimental re-
+    sults demonstrate that RESETOX achieves
+    a remarkable 57% reduction in added tox-
+    icity while maintaining an average trans-
+    lation quality of 99.5% across 164 lan-
+    guages. Our code is available at: https:
+    //github.com'
 - idx: 3
   or_num: 9
   title: Using Machine Translation to Augment Multilingual Classification
@@ -545,6 +571,24 @@
     management. Academic research has a contribution to make in this respect, and
     the coming together of translation and organisation studies offers promising avenues
     for further research.'
+- idx: 24
+  or_num: 7
+  title: Added Toxicity Mitigation at Inference Time for Multimodal and Massively
+    Multilingual Translation
+  authors: "Marta R. Costa-juss\xE0, David Dale, Maha Elbayad, Bokai YU"
+  track: research_ts_us
+  format: virtual
+  session: null
+  abstract: 'Machine translation models sometimes lead to added toxicity: translated
+    outputs may contain more toxic content that the original input. In this paper,
+    we introduce MinTox, a novel pipeline to automatically identify and mitigate added
+    toxicity at inference time, without further model training. MinTox leverages a
+    multimodal (speech and text) toxicity classifier that can scale across languages.
+    We demonstrate the capabilities of MinTox when applied to SEAMLESSM4T, a multi-modal
+    and massively multilingual machine translation system. MinTox significantly reduces
+    added toxicity: across all domains, modalities and language directions, 25% to
+    95% of added toxicity is successfully filtered out, while preserving translation
+    quality'
 - idx: 25
   or_num: 9
   title: 'LLMs in Post-Translation Workflows: Comparing Performance in Post-Editing

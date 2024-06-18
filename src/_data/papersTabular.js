@@ -14,6 +14,12 @@ module.exports = function () {
     } else {
       orderNo = paper.poster_no
     }
+    let sessionName;
+    if (paper.format == 'virtual') {
+      sessionName = 'virtual';
+    } else {
+      sessionName = paper.session.slice(0, -1)
+    }
 
     papers.push([
       paper.title,
@@ -21,7 +27,7 @@ module.exports = function () {
       tracks[paper.track],
       paper.or_num,
       paper.format,
-      paper.session.slice(0, -1),
+      sessionName,
       orderNo
     ])
   }
