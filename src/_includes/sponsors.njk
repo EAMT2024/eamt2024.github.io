@@ -1,0 +1,18 @@
+<div class="container sponsors">
+  {% for tier in sponsors %}
+  <div class="row mt-5">
+    <h2 class="col">
+      {{ tier.tier }}
+    </h2>
+  </div>
+  <div class="row mt-2 gx-4 gy-4">
+    {% for sponsor in tier.logos %}
+    <div class="{{ tier.width | join(" ")}} d-flex align-items-center">
+      <a href="{{ sponsor.link }}" target="_blank">
+        <img src="/assets/sponsors/{{ sponsor.file }}" alt="{{ sponsor.name }} logo" class="img-fluid">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

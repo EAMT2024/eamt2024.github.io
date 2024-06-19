@@ -176,3 +176,9 @@
 .fc-list-event-title .sess-location {
   font-size: 0.85rem;
 }
+
+.sponsors h2 {
+  font-size: 1.2rem;
+  color: var(--bs-body-color);
+  font-weight: bold;
+}

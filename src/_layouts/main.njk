@@ -31,8 +31,13 @@ fluid: false
 
     <footer class="text-body-secondary py-5">
       <div class="container">
+        {% if footer %}
+        {{ footer | safe }}
+        {% endif %}
         <p>For corrections, please <a class="link-secondary" href="https://github.com/EAMT2024/eamt2024.github.io/issues" target="_blank">open a GitHub issue</a> or contact <a href="mailto:eamt2024@gmail.com" class="link-secondary">the organisers</a>.</p>
       </div>
+
+      {% include "sponsors.njk" %}
     </footer>
     
     <script defer type="module" src="/assets/app.js"></script>

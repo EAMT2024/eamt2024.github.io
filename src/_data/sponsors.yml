@@ -1,0 +1,60 @@
+- tier: Organisers
+  width: [col-6, col-sm-4]
+  logos:
+    - file: eamt.png
+      name: EAMT
+      link: https://eamt.org
+    - file: zoo.png
+      name: Zoo Digital
+      link: https://www.zoodigital.com
+    - file: uos.png
+      name: University of Sheffield
+      link: https://sheffield.ac.uk
+- tier: Silver Sponsors
+  width: [col-6, col-sm-4]
+  logos:
+    - file: language-weaver.png
+      name: Language Weaver
+      link: https://www.rws.com
+    - file: translated.png
+      name: Translated
+      link: https://translated.com/welcome
+    - file: unbabel.png
+      name: Unbabel
+      link: https://unbabel.com
+- tier: Bronze Sponsors
+  width: [col-4, col-md-2]
+  logos:
+    - file: apptek.png
+      name: AppTek
+      link: https://www.apptek.com
+    - file: crosslang.png
+      name: CrossLang
+      link: https://crosslang.com
+    - file: pangeanic.png
+      name: Pangeanic
+      link: https://pangeanic.com
+    - file: star.png
+      name: STAR Group
+      link: https://star-group.net
+    - file: transperfect.png
+      name: TransPerfect
+      link: https://globallink.transperfect.com
+- tier: Collaborators
+  width: [col-4, col-sm-3]
+  logos:
+    - file: apertium.png
+      name: Apertium
+      link: https://apertium.org
+- tier: Supporters
+  width: [col-4, col-sm-3]
+  logos:
+    - file: springer-nature.jpg
+      name: Springer Nature
+      link: https://www.springernature.com/gp
+- tier: Media Sponsors
+  width: [col-4, col-sm-3]
+  logos:
+    - file: multilingual.png
+      name: MultiLingual
+      link: https://multilingual.com
