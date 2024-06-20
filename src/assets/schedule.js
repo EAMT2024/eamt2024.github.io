@@ -85,7 +85,8 @@ calendar = new Calendar(calendarEl, {
     },
     timeGridWeek: {
       type: 'timeGrid',
-      duration: { days: 5 }
+      duration: { days: 5 },
+      allDaySlot: false
     },
     timeListWeek: {
       type: 'list',
