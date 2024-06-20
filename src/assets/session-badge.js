@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
   sessBadgeList.forEach(sessBadgeEl => {
     let paperIdx = sessBadgeEl.dataset.paperIdx;
+    if (!paperIdx) {
+      return;
+    }
     new Popover(sessBadgeEl, {
       'content': document.getElementById(`t-${paperIdx}-body`).innerHTML,
       'html': true,

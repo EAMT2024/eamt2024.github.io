@@ -10,6 +10,9 @@ title: Schedule
     {% if config.show_locations and event.location %}
       <p>Location: {{ event.location }}</p>
     {% endif %}
+    {% if event.chair %}
+      <p>Chair: {{ event.chair }}</p>
+    {% endif %}
     {% if event.link %}
     <p><a href="{{ event.link }}" target="_blank">More information about this event</a></p>
     {% endif %}

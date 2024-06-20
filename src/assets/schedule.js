@@ -21,12 +21,31 @@ function makeLocationEl(location, icon = true, tint = true) {
 
   if (icon) {
     let iconEl = document.createElement('i')
-    iconEl.classList.add('fa-solid', 'fa-location-dot', 'me-2', 'sess-location-icon')
+    iconEl.classList.add('fa-solid',  'fa-fw','fa-location-dot', 'me-2', 'sess-details-icon')
     locationEl.appendChild(iconEl)
   }
 
   locationEl.appendChild(document.createTextNode(location));
   return locationEl;
+}
+
+function makeChairEl(chair, icon=true, tint=true) {
+  let chairEl = document.createElement('div')
+  chairEl.classList.add('sess-chair')
+
+  if (tint) {
+    chairEl.classList.add('text-muted')
+  }
+
+  if (icon) {
+    let iconEl = document.createElement('i')
+    iconEl.classList.add('fa-solid', 'fa-fw', 'fa-user', 'me-2', 'sess-details-icon')
+    chairEl.appendChild(iconEl)
+  }
+
+  chairEl.appendChild(document.createTextNode("Chair: " + chair));
+  return chairEl;
+
 }
 
 let calendar;
@@ -95,10 +114,17 @@ calendar = new Calendar(calendarEl, {
         trigger: 'hover',
         customClass: 'popover-low-pad'
       })
-
+      let hasPopoverContent = false;
+      let content = document.createElement('div');
       if (info.event.extendedProps.location) {
-        let content = document.createElement('div');
         content.appendChild(makeLocationEl(info.event.extendedProps.location, true, false));
+        hasPopoverContent = true;
+      }
+      if (info.event.extendedProps.chair) {
+        content.appendChild(makeChairEl(info.event.extendedProps.chair, true, false));
+        hasPopoverContent = true;
+      }
+      if (hasPopoverContent) {
         popover.setContent({
           '.popover-header': title,
           '.popover-body': content
@@ -179,9 +205,22 @@ function renderTimeListEl(arg) {
     sessionTitleWrapper.appendChild(sessionTitleEl);
     sessionTitleParent.appendChild(sessionTitleWrapper);
   
+    let details = []
     if (arg.event.extendedProps.location) {
       let locationEl = makeLocationEl(arg.event.extendedProps.location);
-      sessionTitleWrapper.appendChild(locationEl)
+      details.push(locationEl)
+    }
+
+    if (arg.event.extendedProps.chair) {
+      let chairEl = makeChairEl(arg.event.extendedProps.chair);
+      details.push(chairEl)
+    }
+
+    if (details.length > 0) {
+      let detailsEl = document.createElement('div');
+      detailsEl.classList.add('sess-details');
+      details.forEach(detail => detailsEl.appendChild(detail));
+      sessionTitleWrapper.appendChild(detailsEl);
     }
 
     mathRenderEl(sessionListCl);
@@ -203,6 +242,11 @@ function renderTimeListEl(arg) {
     if (arg.event.extendedProps.location) {
       let locationEl = makeLocationEl(arg.event.extendedProps.location);
       parentEl.appendChild(locationEl)
+    }
+
+    if (arg.event.extendedProps.chair) {
+      let chairEl = makeChairEl(arg.event.extendedProps.chair);
+      parentEl.appendChild(chairEl)
     }
 
     domNodes.push(parentEl);

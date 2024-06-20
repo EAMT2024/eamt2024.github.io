@@ -553,7 +553,7 @@
   authors: Paolo Canavese, Patrick Cadwell
   track: research_ts_us
   format: oral
-  session: oral_2b
+  session: oral_2a
   abstract: 'New language technologies are driving major changes in the language services
     of institutions worldwide, including the Swiss Confederation. Based on a definition
     of change management as a combination of adaptation measures at both the organisation
@@ -654,7 +654,7 @@
     a-Bonet, Josef van Genabith"
   track: research_ts_us
   format: oral
-  session: oral_2a
+  session: oral_2b
   abstract: "Translations into a language differ in systematic ways from text originally\
     \ authored in the same language.\nThese differences, collectively known as translationese,\
     \ can pose challenges in cross-lingual natural language processing: models trained\

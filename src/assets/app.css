@@ -157,7 +157,7 @@
   font-variant: small-caps;
 }
 
-.sess-location-icon {
+.sess-details-icon {
   color: rgba(var(--bs-secondary-rgb), 0.8);
 }
 
@@ -173,7 +173,8 @@
   border-radius: var(--bs-popover-inner-border-radius);
 }
 
-.fc-list-event-title .sess-location {
+.fc-list-event-title .sess-location,
+.fc-list-event-title .sess-chair {
   font-size: 0.85rem;
 }
 
@@ -181,4 +182,16 @@
   font-size: 1.2rem;
   color: var(--bs-body-color);
   font-weight: bold;
+}
+
+.text-sm {
+  font-size: 0.85rem;
+}
+
+.sess-details {
+  display: flex;
+}
+
+.sess-details>div {
+  margin-right: 1rem;
 }

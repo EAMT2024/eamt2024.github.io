@@ -45,9 +45,15 @@ footer: |
                 {{ event.date | shortDate }} {{ event.start_time }} - {{ event.end_time }}
               </div>
               {% if config.show_locations and event.location %}
-              <div>
+              <div class="text-sm">
                 <i class="fa-solid fa-map-marker me-1 fa-fw"></i>
                 {{ event.location }}
+              </div>
+              {% endif %}
+              {% if event.chair %}
+              <div class="text-sm">
+                <i class="fa-solid fa-user me-1 fa-fw"></i>
+                Chair: {{ event.chair }}
               </div>
               {% endif %}
             </div>
