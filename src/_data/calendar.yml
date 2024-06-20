@@ -47,6 +47,7 @@
   end_time: "12:00"
   link: https://eamt2024.sheffield.ac.uk/programme/keynote-speakers#h.qjn0rzu6ewqs
   location: LT1
+  chair: "Carolina Scarton, Stuart Wrigley"
 - type: session
   date: 2024-06-24
   start_time: "12:00"
@@ -55,6 +56,7 @@
     type: poster
     idx: 1a
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: session
   date: 2024-06-24
   start_time: "12:00"
@@ -63,6 +65,7 @@
     type: poster
     idx: 1b
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: session
   date: 2024-06-24
   start_time: "12:00"
@@ -71,6 +74,7 @@
     type: poster
     idx: 1c
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: break
   title: Lunch Break
   date: 2024-06-24
@@ -103,6 +107,7 @@
   start_time: "15:00"
   end_time: "16:00"
   link: https://eamt2024.sheffield.ac.uk/programme/panel-discussion
+  chair: "Carolina Scarton, Edward Gow-Smith"
 - type: break
   title: Coffee Break
   date: 2024-06-24
@@ -183,6 +188,7 @@
     type: poster
     idx: 2a
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: session
   date: 2024-06-25
   start_time: "11:45"
@@ -191,6 +197,7 @@
     type: poster
     idx: 2b
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: session
   date: 2024-06-25
   start_time: "11:45"
@@ -199,6 +206,7 @@
     type: poster
     idx: 2c
     is_boaster: true
+  chair: "Chris Oakley, Charlotte Prescott, Tom Pickard"
 - type: break
   title: Lunch Break
   date: 2024-06-25
@@ -276,6 +284,7 @@
   start_time: "09:15"
   end_time: "10:15"
   link: https://eamt2024.sheffield.ac.uk/programme/keynote-speakers#h.fv0s4sfkb6fu
+  chair: "Xingyi Song"
 - type: break
   title: Coffee Break
   date: 2024-06-26
@@ -305,6 +314,7 @@
     type: poster
     idx: 3a
     is_boaster: true
+  chair: "Xingyi Song, Tom Pickard"
 - type: session
   date: 2024-06-26
   start_time: "11:45"
@@ -313,6 +323,7 @@
     type: poster
     idx: 3b
     is_boaster: true
+  chair: "Xingyi Song, Tom Pickard"
 - type: session
   date: 2024-06-26
   start_time: "11:45"
@@ -321,6 +332,7 @@
     type: poster
     idx: 3c
     is_boaster: true
+  chair: "Xingyi Song, Tom Pickard"
 - type: break
   title: Lunch Break
   date: 2024-06-26
