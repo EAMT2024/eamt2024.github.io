@@ -9,9 +9,11 @@ type:
   registration:
     color: "#feccd8"
     textColor: "#000000"
+    location: "Diamond South Entrance"
   announcements:
     color: "#feccd8"
     textColor: "#000000"
+    location: "LT1"
   break:
     color: "#f4f4f5"
     textColor: "#000000"
