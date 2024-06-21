@@ -5,7 +5,7 @@
   start_time: "17:30"
   end_time: "20:30"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.au665ktdrlwu"
-  location: "National Videogame Museum, Angel St"
+  location: "National Videogame Museum, Angel St, S3 8LN"
 
 # DAY 1
 - type: registration
@@ -135,6 +135,7 @@
   start_time: "18:30"
   end_time: "21:00"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.59hczppjsup2"
+  location: "Sheffield Winter Garden, Surrey St, S1 2LH"
 
 # DAY 2
 - type: registration
@@ -265,7 +266,7 @@
   start_time: "18:30"
   end_time: "23:30"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.uqwmw7kh405p"
-  location: "Kelham Island Museum (main entrance), Alma Street"
+  location: "Kelham Island Museum, Alma Street, S3 8SA"
 
 # DAY 3
 - type: registration
@@ -391,7 +392,7 @@
   start_time: "18:00"
   end_time: "21:00"
   link: "https://eamt2024.sheffield.ac.uk/programme/social-events#h.3j34vcxuwhst"
-  location: "Various in Kelham island - meeting point Heist Brew Co, S3 8AT"
+  location: "Meet at Heist Brew Co, Neepsend Lane, S3 8AT"
 
 # DAY 4
 - type: registration

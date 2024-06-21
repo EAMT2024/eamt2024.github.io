@@ -1,2 +1,2 @@
-show_poster_num: false
-show_locations: false
+show_poster_num: true
+show_locations: true

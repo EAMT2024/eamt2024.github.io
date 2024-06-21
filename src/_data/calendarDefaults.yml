@@ -30,9 +30,11 @@ type:
     color: "#d946ef"
     textColor: "#ffffff"
     prefixType: true
+    location: "LT1"
   plenary:
     color: "#8b5cf6"
     textColor: "#ffffff"
+    location: "LT1"
   tutorial:
     color: "#14b8a6"
     prefixType: true
@@ -41,9 +43,13 @@ type:
 title:
   "CTT 2024":
     link: "https://ctt2024.ccl.kuleuven.be/programme"
+    location: "LT5"
   "GITT 2024":
     link: "https://sites.google.com/tilburguniversity.edu/gitt2024/programme"
+    location: "LT6"
   "KEMT 2024":
     link: "https://kemt2024.wixsite.com/home#comp-jnkeix36"
+    location: "LT7"
   "Linguistically Motivated Neural Machine Translation":
     link: "https://eamt2024.sheffield.ac.uk/programme/tutorial#h.lf9bcxnbtncv"
+    location: "LT2"

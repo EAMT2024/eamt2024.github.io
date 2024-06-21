@@ -235,19 +235,31 @@ function renderTimeListEl(arg) {
       linkEl.href = arg.event.extendedProps.link;
       linkEl.target = '_blank';
       linkEl.innerText = arg.event.title;
+      linkEl.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
       parentEl.appendChild(linkEl);
     } else {
       parentEl.appendChild(document.createTextNode(arg.event.title));
     }
 
+    let details = []
     if (arg.event.extendedProps.location) {
       let locationEl = makeLocationEl(arg.event.extendedProps.location);
+      details.push(locationEl)
       parentEl.appendChild(locationEl)
     }
 
     if (arg.event.extendedProps.chair) {
       let chairEl = makeChairEl(arg.event.extendedProps.chair);
-      parentEl.appendChild(chairEl)
+      details.push(chairEl)
+    }
+
+    if (details.length > 0) {
+      let detailsEl = document.createElement('div');
+      detailsEl.classList.add('sess-details');
+      details.forEach(detail => detailsEl.appendChild(detail));
+      parentEl.appendChild(detailsEl);
     }
 
     domNodes.push(parentEl);
