@@ -188,9 +188,13 @@
   font-size: 0.85rem;
 }
 
-.sess-details {
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .sess-details {
+    display: flex;
+  }
 }
+
+
 
 .sess-details>div {
   margin-right: 1rem;
