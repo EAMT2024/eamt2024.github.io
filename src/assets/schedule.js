@@ -148,6 +148,11 @@ calendar = new Calendar(calendarEl, {
         let modalEl = document.getElementById(modalId);
         let modal = Modal.getOrCreateInstance(modalEl)
         modal.show()
+
+        let popover = Popover.getInstance(info.el);
+        if (popover) {
+          popover.hide();
+        }
       }
     } else if (info.view.type === 'timeListWeek') {
       if (info.jsEvent.target.closest('.accordion')) {
