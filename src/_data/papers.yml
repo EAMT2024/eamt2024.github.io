@@ -53,22 +53,15 @@
   session: null
   abstract: 'Our proposed method, RESETOX (REdo
     SEarch if TOXic), addresses the issue of
-    Neural Machine Translation (NMT) gener-
-    ating translation outputs that contain toxic
-    words not present in the input. The ob-
-    jective is to mitigate the introduction of
+    Neural Machine Translation (NMT) generating translation outputs that contain toxic
+    words not present in the input. The objective is to mitigate the introduction of
     toxic language without the need for re-
     training. In the case of identified added
-    toxicity during the inference process, RE-
-    SETOX dynamically adjusts the key-value
+    toxicity during the inference process, RESETOX dynamically adjusts the key-value
     self-attention weights and re-evaluates the
-    beam search hypotheses. Experimental re-
-    sults demonstrate that RESETOX achieves
-    a remarkable 57% reduction in added tox-
-    icity while maintaining an average trans-
-    lation quality of 99.5% across 164 lan-
-    guages. Our code is available at: https:
-    //github.com'
+    beam search hypotheses. Experimental results demonstrate that RESETOX achieves
+    a remarkable 57% reduction in added toxicity while maintaining an average trans-
+    lation quality of 99.5% across 164 languages. Our code is available at: https://github.com/mt-upc/ReSeTOX'
 - idx: 3
   or_num: 9
   title: Using Machine Translation to Augment Multilingual Classification
