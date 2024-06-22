@@ -671,7 +671,7 @@
     \ data built from the Europarl corpus that underpins this study."
 - idx: 29
   or_num: 14
-  title: 'Translate your Own: a Post-Edition Experiment in the NLP domain'
+  title: 'Translate your Own: a Post-Editing Experiment in the NLP domain'
   authors: "Rachel Bawden, Ziqian Peng, Maud B\xE9nard, \xC9ric Villemonte de la Clergerie,\
     \ Rapha\xEBl Esamotunu, Mathilde Huguin, Natalie K\xFCbler, Alexandra Mestivier,\
     \ Mona Michelot, Laurent Romary, Lichao Zhu, Fran\xE7ois Yvon"
@@ -679,22 +679,11 @@
   format: poster
   session: poster_3b
   poster_no: 11
-  abstract: 'The improvements of neural machine translation systems make translation
-    and post-edition pipelines ever more effective, and for a wider range of applications.
-    In this paper, we evaluate the effectiveness of such a pipeline for the translation
-    of academic documents (limited here to article abstracts). Using a dedicated interface,
-    we collect, then analyse the post-edits of approximately 350 abstracts (English-to-French)
-    in the Natural Language Processing domain for two groups of post-editors: trained
-    translators on the one hand and domain experts on the other. Our results confirm
-    that such pipelines can be effective, at least for high-resource language pairs.
-    They also highlight the difference in the post-editing strategy of these two subgroups.
-    Finally, they suggest that working on the translation of terms is the most pressing
-    issue to improve fully automatic translations, but that in a post-editing setup,
-    other error types can be equally annoying for post-editors.'
+  abstract: "The improvements in neural machine translation make translation and post-editing pipelines ever more effective for a wider range of applications. In this paper, we evaluate the effectiveness of such a pipeline for the translation of scientific documents (limited here to article abstracts). Using a dedicated interface, we collect, then analyse the post-edits of approximately 350 abstracts (English→French) in the Natural Language Processing domain for two groups of post-editors: domain experts (academics encouraged to post-edit their own articles) on the one hand and trained translators on the other. Our results confirm that such pipelines can be effective, at least for high-resource language pairs. They also highlight the difference in the post-editing strategy of the two subgroups. Finally, they suggest that working on term translation is the most pressing issue to improve fully automatic translations, but that in a post-editing setup, other error types can be equally annoying for post-editors."
 - idx: 30
   or_num: 15
-  title: 'Pre-task perceptions of MT influence quality and productivity: implications
-    for training and the importance of better translator-computer interactions'
+  title: 'Pre-task perceptions of MT influence quality and productivity: the importance
+    of better translator-computer interactions and implications for training'
   authors: Vicent Briva-Iglesias, Sharon O'Brien
   track: research_ts_us
   format: poster
