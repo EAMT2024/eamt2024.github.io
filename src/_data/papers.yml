@@ -4,8 +4,8 @@
   authors: Harritxu Gete, Thierry Etchegoyhen
   track: research_tech
   format: poster
-  session: poster_1a
-  poster_no: 3
+  session: poster_2a
+  poster_no: 6
   abstract: Standard context-aware neural machine translation (NMT) typically relies
     on parallel document-level data, exploiting both source and target contexts. Concatenation-based
     approaches in particular, still a strong baseline for document-level NMT, prepend
@@ -69,7 +69,7 @@
   track: research_tech
   format: poster
   session: poster_1a
-  poster_no: 5
+  poster_no: 4
   abstract: An all-too-present bottleneck for text classification model development
     is the need to annotate training data and this need is multiplied for multilingual
     classifiers. Fortunately, contemporary machine translation models are both easily
@@ -207,7 +207,7 @@
   track: research_tech
   format: poster
   session: poster_1a
-  poster_no: 4
+  poster_no: 3
   abstract: "Subword regularized models leverage multiple subword tokenizations of\
     \ one target sentence during training. However, selecting one tokenization during\
     \ inference leads to the underutilization of knowledge learned about multiple\
@@ -490,7 +490,7 @@
   track: research_ts_us
   format: poster
   session: poster_1b
-  poster_no: 7
+  poster_no: 6
   abstract: 'Assessing the performance of interpreting services is a complex task,
     given the nuanced nature of spoken language translation, the strategies that interpreters
     apply, and the diverse expectations of users. The complexity of this task become
@@ -518,7 +518,7 @@
   track: research_ts_us
   format: poster
   session: poster_1b
-  poster_no: 9
+  poster_no: 8
   abstract: 'Translation Quality Evaluation (TQE) is an essential step of the modern
     translation production process. TQE is critical in assessing both machine translation
     (MT) and human translation (HT) quality without reference translations. The ability
@@ -591,7 +591,7 @@
   track: research_ts_us
   format: poster
   session: poster_1b
-  poster_no: 8
+  poster_no: 7
   abstract: "This study conducts a comprehensive comparison of three leading LLMs\u2014\
     GPT-4, Claude 3, and Gemini\u2014in two translation-related tasks: automatic post-editing\
     \ and MQM error annotation, across four languages. Utilizing the pharmaceutical\
@@ -609,7 +609,7 @@
   track: research_ts_us
   format: poster
   session: poster_1b
-  poster_no: 10
+  poster_no: 9
   abstract: This paper presents a comparative analysis between human translation (HT)
     and post-edited machine translation (PEMT) across three datasets collected in
     professional contexts from a lexical and syntactic perspective to verify whether
@@ -632,7 +632,7 @@
   track: research_ts_us
   format: poster
   session: poster_1b
-  poster_no: 6
+  poster_no: 5
   abstract: This paper describes work in progress on Visualisation tools to foster
     collaborations between translators and computational scientists. We aim to describe
     how visualisation features can be used to explain translation and NMT outputs.
@@ -863,7 +863,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 12
+  poster_no: 13
   abstract: In this paper the process of training and evaluating NMT systems for a
     language pair including a low-resource language variety is presented. A parallel
     corpus for this language pair in the domain of legal texts has been compiled.
@@ -879,7 +879,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 10
+  poster_no: 11
   abstract: This paper investigates the effectiveness of combining machine translation
     (MT) systems and large language models (LLMs) to produce gender-inclusive translations
     from English to Spanish. The study uses a multi-step approach where a translation
@@ -899,7 +899,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 7
+  poster_no: 8
   abstract: "Neural Machine Translation (NMT) for low-resource languages remains a challenge for many NLP researchers. In this work, we deploy a standard data augmentation methodology by back-translation to a new language translation direction, i.e., Cantonese-to-English. 
     We present the models we fine-tuned using the limited amount of real data and the synthetic data we generated using back-translation by three models: OpusMT, NLLB, and mBART.
     We carried out automatic evaluation using a range of different metrics including those that are lexical-based and embedding-based.
@@ -913,7 +913,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 6
+  poster_no: 7
   abstract: The paper presents findings from a comprehensive market study commissioned
     by the European Commission, aimed at analysing multilinguality of European websites
     and automated website translation services across various sectors. Additionally,
@@ -956,7 +956,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 8
+  poster_no: 9
   abstract: 'This paper presents a multilingual aligned corpus of political debates
     from the United Nations (UN) General Assembly sessions between 1978 and 2021,
     which covers five of the six official UN languages: Arabic, Chinese, English,
@@ -975,7 +975,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 9
+  poster_no: 10
   abstract: "This paper examines the suitability of a large language model (LLM),\
     \ GPT-4, for generating multiple choice questions (MCQs) aimed at assessing subject\
     \ matter expertise (SME) in the domain of medical translation. The main objective\
@@ -1000,7 +1000,7 @@
   track: impl_cs
   format: poster
   session: poster_2b
-  poster_no: 11
+  poster_no: 12
   abstract: "While large language models (LLMs) pre-trained on massive amounts of\
     \ unpaired language data have reached the state-of-the-art in machine translation\
     \ (MT) of general domain texts, post-editing (PE) is still required to correct\
@@ -1094,7 +1094,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 21
+  poster_no: 22
   abstract: SmartBiC, an 18-month innovation project funded by the Spanish Government,
     aims at improving the full process of collecting, filtering and selecting in-domain
     parallel content to be used for machine translation and language model tuning
@@ -1226,7 +1226,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 14
+  poster_no: 15
   abstract: Artificial intelligence (AI) is quickly becoming an exciting new technology
     for the translation industry in form of large language models (LLMs). AI-based
     functionality could be used to improve the output of neural machine translation
@@ -1243,7 +1243,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 13
+  poster_no: 14
   abstract: 'This research project aims to develop a comprehensive methodology to
     help make machine translation (MT) systems more gender-inclusive for society.
     The goal is the creation of a detection system, a machine learning (ML) model
@@ -1261,7 +1261,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 18
+  poster_no: 19
   abstract: The INCREC project aims to uncover the creative stages of professional
     translators to understand how technology can be best applied to the translation
     of literary and audio-visual texts, and to analyse the im-pact of these processes
@@ -1275,7 +1275,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 22
+  poster_no: 23
   abstract: We introduce SMUGRI-MT, an online neural machine translation system that
     covers 20 low-resource Finno-Ugric languages, along with seven high-resource languages.
 - idx: 62
@@ -1285,7 +1285,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 20
+  poster_no: 21
   abstract: plain X is a 4-in-1 solution for language adaptation. The software is
     an outcome of European HLT research and is by now in use as the major human language
     and AI platform at Deutsche Welle. plain X is a one-stop-shop for automated transcription,
@@ -1317,7 +1317,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 17
+  poster_no: 18
   abstract: Research on gender bias in Machine Translation (MT) predominantly focuses
     on binary gender or few languages. In this project, we investigate the ability
     of commercial MT systems and neural models to translate using gender-fair language
@@ -1336,7 +1336,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 16
+  poster_no: 17
   abstract: Addressing online disinformation requires analysing narratives across
     languages to help fact-checkers and journalists sift through large amounts of
     data. The ExU project focuses on developing AI-based models for multilingual disinformation
@@ -1352,7 +1352,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 19
+  poster_no: 20
   abstract: VIGILANT (Vital IntelliGence to Investigate ILlegAl DisiNformaTion) is
     a three-year Horizon Europe project that will equip European Law Enforcement Agencies
     (LEAs) with advanced disinformation detection and analysis tools to investigate
@@ -1382,7 +1382,7 @@
   track: pr_pj
   format: poster
   session: poster_2c
-  poster_no: 15
+  poster_no: 16
   abstract: "Among the services provided by Softcatal\xE0, a non-profit 25-year-old\
     \ grassroots organization that localizes software into Catalan and develops software\
     \ to ease the generation of Catalan content, one of the most used is its machine\
