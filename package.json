@@ -11,6 +11,7 @@
     "@fullcalendar/interaction": "^6.1.13",
     "@fullcalendar/list": "^6.1.13",
     "@fullcalendar/moment": "^6.1.13",
+    "@fullcalendar/moment-timezone": "^6.1.14",
     "@fullcalendar/timegrid": "^6.1.13",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",

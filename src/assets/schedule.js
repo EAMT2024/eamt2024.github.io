@@ -1,6 +1,6 @@
 import { Calendar } from '@fullcalendar/core'
 import bootstrap5Plugin from '@fullcalendar/bootstrap5'
-import momentPlugin from '@fullcalendar/moment'
+import momentTimezonePlugin from '@fullcalendar/moment-timezone'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
@@ -54,7 +54,7 @@ var calendarEl = document.getElementById('calendar');
 calendar = new Calendar(calendarEl, {
   timeZone: 'Europe/London',
   events: '/events.json',
-  plugins: [bootstrap5Plugin, momentPlugin, timeGridPlugin, listPlugin, interactionPlugin],
+  plugins: [bootstrap5Plugin, momentTimezonePlugin, timeGridPlugin, listPlugin, interactionPlugin],
   themeSystem: 'bootstrap5',
   nowIndicator: true,
   slotEventOverlap: false,
@@ -62,6 +62,7 @@ calendar = new Calendar(calendarEl, {
   contentHeight: 'auto',
   stickyHeaderDates: true,
   initialDate: '2024-06-23',
+  // now: nowTime,
   validRange: {
     start: '2024-06-23',
     end: '2024-06-28'
